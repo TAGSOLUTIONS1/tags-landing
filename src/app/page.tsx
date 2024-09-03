@@ -7,12 +7,14 @@ import BusinessTransform from '@/components//shared/BusinessTransform'
 import Footer from "@/components/ui/Footer";
 import About from "@/components/shared/About";
 import CompaniesThrive from "@/components/shared/CompaniesThrive";
+import Certifications from "@/components/shared/Certifications";
 
 const Home = () => {
   return (
     <main>
       <Navbar />
       <Slider id="home" />
+      <Certifications />
       <Services id="services" />
       <Testimonials id="why-tags" />
       <CompaniesThrive id="case-studies" />

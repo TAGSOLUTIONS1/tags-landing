@@ -82,6 +82,17 @@ const Slider: React.FC<SliderProps> = ({id}) => {
             >
                 <ChevronRight />
             </button>
+
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    {slides.map((_, index) => (
+                        <div
+                            key={index}
+                            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-orange-primary' : 'border-2 border-orange-primary'}`}
+                            onClick={() => setCurrentIndex(index)}
+                        />
+                    ))}
+                </div>
+
         </div>
         </section>
     );

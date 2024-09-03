@@ -42,7 +42,7 @@ const CompaniesThrive:React.FC <CompaniesProps> = ({id}) => {
 
     return (
         <section id={id}>
-        <div className="mt-20">
+        <div className="mt-32">
             <div className="ml-36">
                 <Heading color={"black"} title={"How Companies Thrive With Us"}></Heading>
                 <p className="text-p3 text-dark-ceoclr">Here’s how businesses succeeded after switching to our custom services.</p>
