@@ -2,9 +2,12 @@ import Button from '@/components/ui/Button';
 import Heading from '@/components/ui/Heading';
 import Paragraph from '@/components/ui/Paragraph';
 import React from 'react';
-
-const BusinessTransform:React.FC = ()=> {
+interface BusinessProps{
+  id?:string,
+}
+const BusinessTransform:React.FC<BusinessProps> = ({id})=> {
   return (
+    <section id={id}>
     <div className="relative w-full h-screen mt-20 shadow-globe">
       <video
         className="absolute inset-0 w-full h-full object-cover rotate-180"
@@ -36,6 +39,7 @@ const BusinessTransform:React.FC = ()=> {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

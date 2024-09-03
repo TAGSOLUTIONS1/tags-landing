@@ -2,7 +2,7 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import SliderPic from '../../../../public/icons/SliderPic.jpg';
+import SliderPic from '../../../../public/images/SliderPic.jpg';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Button from '@/components/ui/Button';
 import Heading from '@/components/ui/Heading';
@@ -22,7 +22,11 @@ const slides = [
     }
 ];
 
-const Slider: React.FC = () => {
+interface SliderProps{
+    id:string,
+}
+
+const Slider: React.FC<SliderProps> = ({id}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrevClick = () => {
@@ -34,7 +38,8 @@ const Slider: React.FC = () => {
     };
 
     return (
-        <div className="relative overflow-hidden bg-light-white shadow-md mt-1">
+        <section id={id}>
+            <div className="relative overflow-hidden bg-light-white shadow-md mt-1">
             <div
                 className="flex transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -78,6 +83,7 @@ const Slider: React.FC = () => {
                 <ChevronRight />
             </button>
         </div>
+        </section>
     );
 };
 

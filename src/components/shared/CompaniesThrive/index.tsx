@@ -5,8 +5,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Paragraph from "@/components/ui/Paragraph";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
-import Thrive from '../../../../public/icons/Thrive.jpg';
-import OpenAI from '../../../../public/icons/openAI.png';
+import Thrive from '../../../../public/images/Thrive.jpg';
+import OpenAI from '../../../../public/logo/openAI.png';
 import ReadMoreIcon from "@/components/ui/ReadMoreIcon";
 const slides = [
     {
@@ -26,8 +26,10 @@ const slides = [
         description: "head4 Implemented an AI system to tailor user experiences with real-time recommendations. This increased relevance and engagement across the platform.",
     },
 ];
-
-const CompaniesThrive = () => {
+interface CompaniesProps{
+    id:string,
+}
+const CompaniesThrive:React.FC <CompaniesProps> = ({id}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrevClick = () => {
@@ -39,6 +41,7 @@ const CompaniesThrive = () => {
     };
 
     return (
+        <section id={id}>
         <div className="mt-20">
             <div className="ml-36">
                 <Heading color={"black"} title={"How Companies Thrive With Us"}></Heading>
@@ -115,6 +118,7 @@ const CompaniesThrive = () => {
                 </div>
             </div>
         </div>
+        </section>
     );
 }
 

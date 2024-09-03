@@ -1,11 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import TagsLogo from '../../../../public/icons/TagsLogo.png'
+import TagsLogo from '../../../../public/logo/TagsLogo.png'
 import Paragraph from "@/components/ui/Paragraph";
 import Button from "@/components/ui/Button";
 import Footer from "@/components/ui/Footer";
-const FooterSection:React.FC =() =>{
+interface Aboutprops{
+    id?:string,
+}
+const About:React.FC<Aboutprops> =({id}) =>{
     return(
+        <section id={id}>
         <div className="bg-light-white w-full shadow-md h-[446px] max-h-max">
             <div className="flex lg:flex-row flex-col gap-12 mx-36 justify-between">
                 <div className="w-72 mt-28"> 
@@ -36,7 +40,8 @@ const FooterSection:React.FC =() =>{
                 </div>
             </div>
         </div>
+        </section>
     )
 }
 
-export default FooterSection;
+export default About;
