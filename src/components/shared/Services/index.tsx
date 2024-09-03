@@ -1,12 +1,14 @@
 import Image from "next/image";
-import TagsLogo from '@/components/icons/TagsLogo.png'
 import Button from "@/components/ui/Button";
 import Heading from "@/components/ui/Heading";
 import CardInclusive from '@/components/shared/CardInclusive'
-import CardPic from '../../../../public/icons/CardPic.jpg'
-const Services:React.FC =() => {
+import CardPic from '../../../../public/images/CardPic.jpg'
+interface Servicesprops{
+  id:string,
+}
+const Services:React.FC<Servicesprops> =({ id }) => {
   return (
-    <>
+    <section id={id}>
     <div className="w-full mt-10 p-[50px_10px_60px_10px] gap-[10px] bg-black">
         <div className="gap-[60px] mx-24">
                 <div className="mt-10 text-center">
@@ -28,7 +30,7 @@ const Services:React.FC =() => {
         </div>
         </div>
 
-    </>
+      </section>
   );
 }
 

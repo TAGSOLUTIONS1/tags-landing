@@ -1,10 +1,10 @@
 'use client'
 import TestimonialCard from '@/components/ui/TestimonialCard'
 import React, { useState,useEffect} from 'react'
-import Testimonial1 from '../../../../public/icons/Testimonial1.png'
-import Testimonial2 from '../../../../public/icons/Testimonial2.jpg'
-import Testimonial3 from '../../../../public/icons/Testimonial3.jpg'
-import Testimonial4 from '../../../../public/icons/Testimonial4.png'
+import Testimonial1 from '../../../../public/images/Testimonial1.png'
+import Testimonial2 from '../../../../public/images/Testimonial2.jpg'
+import Testimonial3 from '../../../../public/images/Testimonial3.jpg'
+import Testimonial4 from '../../../../public/images/Testimonial4.png'
 import Heading from '@/components/ui/Heading'
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -42,7 +42,11 @@ const testimonials = [
   // incase want to add more ;;
 ];
 
-const Testimonials: React.FC = () => {
+interface TestimonialProps{
+  id:string,
+}
+const Testimonials: React.FC<TestimonialProps> = ({id}) => {
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 0);
@@ -88,6 +92,7 @@ const isNextDisabled = ((currentIndex == (Math.floor(testimonials.length/2))) &&
 // console.log("wwww " , windowWidth);
 
   return (
+    <section id={id}>
     <div className='mt-20'>
       <div className='text-center'>
         <Heading title='Voices of Success' color='orange-primary' />
@@ -130,6 +135,7 @@ const isNextDisabled = ((currentIndex == (Math.floor(testimonials.length/2))) &&
         </button>
       </div>
     </div>
+    </section>
   )
 }
 
