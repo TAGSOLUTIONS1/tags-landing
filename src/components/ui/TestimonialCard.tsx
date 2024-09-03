@@ -15,7 +15,7 @@ const TestimonialCard = (props: TestimonialCardProps) => {
         <Paragraph title={props.description} color='black'></Paragraph>
       </div>
       <div className='flex flex-col items-center text-center mt-10'>
-        <Image className='w-[87px] h-[87px] rounded-full' src={props.image} alt="Logo" />
+        <Image className='w-[87px] h-[87px] rounded-full mix-blend-luminosity' src={props.image} alt="Logo" />
         <div className='mt-2'>
             <Paragraph title={props.name} color="dark-nameclr"></Paragraph>
             <p className='text-dark-ceoclr text-p2'>{props.attribute}</p>

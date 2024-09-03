@@ -59,37 +59,41 @@ const Testimonials: React.FC<TestimonialProps> = ({id}) => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
+
   }, []);
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
 };
 
+const [coloredindex , setColoredinndex]=useState(0);
+const [count , setCount] =useState(2);
+
 const handleNextClick = () => {
   if ((currentIndex == (Math.floor(testimonials.length/2))) && windowWidth>=800)
   {
     setCurrentIndex(0);
+    setCount(Math.ceil(testimonials.length/2));
+    setColoredinndex(0);
   }
   else if ((currentIndex == (Math.floor(testimonials.length/3))) && windowWidth>=1000)
   {
     setCurrentIndex(0);
+    setCount(Math.ceil(testimonials.length/3));
+    setColoredinndex(0);
   }
   else
   {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    setColoredinndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   }
     
 };
 
-const isPrevDisabled = currentIndex === 0;
-const isNextDisabled = ((currentIndex == (Math.floor(testimonials.length/2))) && windowWidth>=800) || 
-((currentIndex == (Math.floor(testimonials.length/3))) && windowWidth>=1000)
-// const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-// const [windowWidth, setWidth] = useState(window.innerWidth);
-// const handleResize = () => setWidth(window.innerWidth);
-// console.log("currnent index is " , currentIndex);
-// console.log("testimonail" , Math.floor(testimonials.length/2));
-// console.log("wwww " , windowWidth);
+  const isPrevDisabled = currentIndex === 0;
+  const isNextDisabled = ((currentIndex == (Math.floor(testimonials.length/2))) && windowWidth>=800) || 
+  ((currentIndex == (Math.floor(testimonials.length/3))) && windowWidth>=1000)
+  console.log(" cc " ,  count);
 
   return (
     <section id={id}>
@@ -134,6 +138,15 @@ const isNextDisabled = ((currentIndex == (Math.floor(testimonials.length/2))) &&
           <ChevronRight />
         </button>
       </div>
+        <div className="mt-8 flex justify-center space-x-2">
+          {Array.from({ length: count }).map((_, index) => (
+            <div
+              key={index}
+              className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-orange-primary' : 'border-2 border-orange-primary'}`}
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}
+        </div>
     </div>
     </section>
   )
