@@ -1,10 +1,6 @@
 'use client';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import React, { useState, useEffect } from 'react';
-import Testimonial1 from '../../../../public/images/testimonial1.png';
-import Testimonial2 from '../../../../public/images/testimonial2.jpg';
-import Testimonial3 from '../../../../public/images/testimonial3.jpg';
-import Testimonial4 from '../../../../public/images/testimonial4.png';
 import Heading from '@/components/ui/Heading';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -13,34 +9,34 @@ const testimonials = [
     name: 'Brandon Moore',
     description: `"Tags brought FindxStorage to life with a seamless, user-friendly platform that sets us apart. Their AI expertise and industry knowledge have positioned us for success. Tags delivered not just a product, but our vision."`,
     attribute: 'CEO at FindxStorage',
-    image: Testimonial1,
+    image: '/images/testimonial1.png',
   },
   {
     name: 'Steve Davis',
     description: `""Tags turned my vision into a leading restaurant reservation platform. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future.""`,
     attribute: 'CEO at Have A Seat',
-    image: Testimonial2,
+    image: '/images/testimonial2.jpg',
   },
   {
     name: 'Jason Wong',
     description:
       'The custom analytics platform from Tags has given us powerful insights, driving better business decisions.',
     attribute: 'CEO at Omnicharge',
-    image: Testimonial3,
+    image: '/images/testimonial3.jpg',
   },
   {
     name: 'Jason Wang',
     description:
       "Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever.",
     attribute: 'CEO at Omnicharge',
-    image: Testimonial4,
+    image: '/images/testimonial4.png',
   },
   {
     name: 'Jason Wang3',
     description:
       "Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever.",
     attribute: 'CEO at Omnicharge',
-    image: Testimonial1,
+    image: '/images/testimonial1.png',
   },
   // incase want to add more ;;
 ];

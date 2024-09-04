@@ -17,6 +17,8 @@ const CardInclusive: React.FC<CardProps> = (props) => {
           className="w-[434px] h-[358px] rounded-2xl"
           src={props.image}
           alt="Logo"
+          width={434}
+          height={358}
         />
       </div>
       <p className="text-p1 mt-10">{props.description}</p>

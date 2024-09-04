@@ -19,6 +19,8 @@ const TestimonialCard = (props: TestimonialCardProps) => {
         <Image
           className="w-[87px] h-[87px] rounded-full mix-blend-luminosity"
           src={props.image}
+          width={87}
+          height={87}
           alt="Logo"
         />
         <div className="mt-2">
