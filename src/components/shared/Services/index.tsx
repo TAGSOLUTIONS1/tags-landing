@@ -1,6 +1,5 @@
 import Heading from '@/components/ui/Heading';
 import CardInclusive from '@/components/shared/CardInclusive';
-import CardPic from '../../../../public/images/cardpic.jpg';
 interface Servicesprops {
   id: string;
 }
@@ -37,7 +36,7 @@ const Services: React.FC<Servicesprops> = ({ id }) => {
                   'Unlock the power of your data with advanced AI solutions. We transform raw data into actionable insights, helping your business make smarter decisions and stay ahead of the competition.'
                 }
                 buttoncontent={'Learn More'}
-                image={CardPic}
+                image="/images/cardpic.jpg"
               ></CardInclusive>
             </div>
           </div>

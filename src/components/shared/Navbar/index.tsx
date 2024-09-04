@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import TagsLogo from '../../../../public/logo//tagslogo.png';
 import Button from '@/components/ui/Button';
 const Navbar: React.FC = () => {
   return (
@@ -8,8 +7,12 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto px-8">
           <div className="hidden md:flex justify-between items-center gap-[10px]">
             <div className="flex items-center gap-[5px]">
-              <Image src={TagsLogo} alt="Logo" width={120} height={40} />
-
+              <Image
+                src="/logo/tagslogo.png"
+                alt="Logo"
+                width={120}
+                height={40}
+              />
               <a
                 href="#home"
                 className="items-center text-dark-secondary px-5 py-4 gap-[10px]"

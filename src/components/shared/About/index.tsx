@@ -1,10 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import TagsLogo from '../../../../public/logo/tagslogo.png';
 import Paragraph from '@/components/ui/Paragraph';
-// Removed unused imports
-// import Button from '@/components/ui/Button';
-// import Footer from '@/components/ui/Footer';
 
 interface Aboutprops {
   id?: string;
@@ -16,7 +12,12 @@ const About: React.FC<Aboutprops> = ({ id }) => {
       <div className="bg-light-white w-full shadow-md h-[446px] max-h-max">
         <div className="flex lg:flex-row flex-col gap-12 mx-36 justify-between">
           <div className="w-72 mt-28">
-            <Image src={TagsLogo} alt="Tagslogo" width={116} height={88} />
+            <Image
+              src="/logo/tagslogo.png"
+              alt="Tagslogo"
+              width={116}
+              height={88}
+            />
             <Paragraph
               title="Tags provides custom B2B solutions tailored to enhance business efficiency and drive success."
               color="dark-secondary"

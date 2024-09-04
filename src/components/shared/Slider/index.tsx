@@ -2,7 +2,6 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import SliderPic from '../../../../public/images/sliderpic.jpg';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import Paragraph from '@/components/ui/Paragraph';
@@ -71,8 +70,10 @@ const Slider: React.FC<SliderProps> = ({ id }) => {
               </div>
               <div className="lg:w-1/2 w-full flex justify-center">
                 <Image
-                  src={SliderPic}
+                  src="/images/sliderpic.jpg"
                   alt={slide.text}
+                  width={556}
+                  height={405}
                   className="rounded w-[556px] h-[405px] rounded-e-2xl"
                 />
               </div>
