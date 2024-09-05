@@ -9,7 +9,7 @@ import Certifications from '@/components/shared/Certifications';
 
 const Home = () => {
   return (
-    <main className=''>
+    <main>
       <Navbar />
       <Slider id="home" />
       <Certifications/>
