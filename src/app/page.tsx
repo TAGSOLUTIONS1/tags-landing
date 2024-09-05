@@ -12,7 +12,7 @@ const Home = () => {
     <main>
       <Navbar />
       <Slider id="home" />
-      <Certifications/>
+      <Certifications />
       <Services id="services" />
       <Testimonials id="why-tags" />
       <CompaniesThrive id="case-studies" />
