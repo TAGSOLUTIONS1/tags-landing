@@ -126,6 +126,10 @@ module.exports = {
         custom: '0px 4px 4px 0px #00000040',
         globe: '0px 1px 6px 15px rgba(25, 33, 61, 0.08)',
       },
+      mixBlendMode: {
+        luminosity: 'luminosity',
+        normal: 'normal',
+      },
     },
   },
   plugins: [],
