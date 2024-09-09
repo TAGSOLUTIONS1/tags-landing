@@ -30,8 +30,8 @@ const Navbar: React.FC = () => {
                   <path
                     d="M13.4286 0.928675L8.20954 5.40215C7.76015 5.78734 7.09703 5.78734 6.64764 5.40215L1.42859 0.928676"
                     stroke="#4F4A45"
-                    stroke-width="1.1"
-                    stroke-linecap="round"
+                    strokeWidth="1.1"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>

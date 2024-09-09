@@ -1,11 +1,7 @@
-import IndustriesServe from '@/components/shared/IndustriesServe';
+// import IndustriesServe from '@/components/shared/IndustriesServe';
 
 const Industry = () => {
-  return (
-    <main>
-      <IndustriesServe></IndustriesServe>
-    </main>
-  );
+  return <main>{/* <IndustriesServe></IndustriesServe> */}</main>;
 };
 
 export default Industry;

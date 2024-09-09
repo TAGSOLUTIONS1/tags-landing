@@ -21,8 +21,8 @@ const ReadMoreIcon = () => {
         <path
           d="M15.75 24.1899H31.5M26.25 18.1899L32.25 24.1899L26.25 30.1899"
           stroke="#E46625"
-          stroke-width="1.5"
-          stroke-linecap="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
           stroke-linejoin="round"
         />
       </svg>

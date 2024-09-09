@@ -1,12 +1,12 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import Paragraph from '@/components/ui/Paragraph';
 import Footer from '@/components/ui/Footer';
 
 interface Aboutprops {
-  id?: string;
+  id: string;
 }
-
 const About: React.FC<Aboutprops> = ({ id }) => {
   return (
     <section id={id}>
