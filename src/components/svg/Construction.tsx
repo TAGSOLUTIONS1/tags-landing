@@ -27,23 +27,23 @@ const Construction = () => {
                 clip-rule="evenodd"
                 d="M24.1029 25.6908C24.1029 25.381 24.2526 25.0901 24.5048 24.91L29.3027 21.4829C29.9378 21.0293 30.82 21.4833 30.82 22.2638V38.6312C30.82 39.1612 30.3904 39.5908 29.8604 39.5908H25.0625C24.5326 39.5908 24.1029 39.1612 24.1029 38.6312V25.6908Z"
                 stroke="#827F7D"
-                stroke-width="1.43938"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.43938"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M30.82 24.7173L37.1352 29.2282C37.3874 29.4083 37.5371 29.6992 37.5371 30.009V39.5908"
                 stroke="#827F7D"
-                stroke-width="1.43938"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.43938"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M20.7444 39.5908H39.9361"
                 stroke="#827F7D"
-                stroke-width="1.43938"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.43938"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </g>
           </g>

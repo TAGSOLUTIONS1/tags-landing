@@ -25,34 +25,34 @@ const Logistics = () => {
               <path
                 d="M26.5 25C26.5 23.8954 27.3954 23 28.5 23H36.5C37.6046 23 38.5 23.8954 38.5 25V33C38.5 34.1046 37.6046 35 36.5 35H28.5C27.3954 35 26.5 34.1046 26.5 33V25Z"
                 stroke="#827F7D"
-                stroke-width="1.5"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinejoin="round"
               />
               <path
                 d="M23.5 40C24.6046 40 25.5 39.1046 25.5 38C25.5 36.8954 24.6046 36 23.5 36C22.3954 36 21.5 36.8954 21.5 38C21.5 39.1046 22.3954 40 23.5 40Z"
                 stroke="#827F7D"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
               <path
                 d="M23.5 36V22C23.5 20.8954 22.6046 20 21.5 20H20.5"
                 stroke="#827F7D"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M25.5 38H40.5"
                 stroke="#827F7D"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M31.5 26H33.5"
                 stroke="#827F7D"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </g>
           </g>

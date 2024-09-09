@@ -25,9 +25,9 @@ const MediaProduction = () => {
               <path
                 d="M30.5 22C22.5 22 21.5 23 21.5 30C21.5 37 22.5 38 30.5 38C38.5 38 39.5 37 39.5 30C39.5 23 38.5 22 30.5 22ZM33.5 30.2L28.7 33C28.6 33.1 28.4 33 28.4 32.8V27.2C28.4 27 28.5 26.9 28.7 27L33.5 29.8C33.7 29.9 33.7 30.1 33.5 30.2Z"
                 stroke="#7F7F7F"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </g>
           </g>
