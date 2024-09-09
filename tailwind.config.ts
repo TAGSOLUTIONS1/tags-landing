@@ -91,6 +91,7 @@ module.exports = {
         h5: '28px',
         h4: '32px',
         button: '16px',
+        mainH: '60px',
 
         s: '10px',
       },
