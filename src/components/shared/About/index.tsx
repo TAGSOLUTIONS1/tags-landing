@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Paragraph from '@/components/ui/Paragraph';
+import Footer from '@/components/ui/Footer';
 
 interface Aboutprops {
   id?: string;
@@ -9,8 +10,8 @@ interface Aboutprops {
 const About: React.FC<Aboutprops> = ({ id }) => {
   return (
     <section id={id}>
-      <div className="bg-light-white w-full shadow-md h-[446px] max-h-max">
-        <div className="flex lg:flex-row flex-col gap-12 mx-36 justify-between">
+      <div className="bg-light-white w-full shadow-md h-auto max-h-max">
+        <div className="flex lg:flex-row flex-col gap-12 mx-36 justify-between mb-4">
           <div className="w-72 mt-28">
             <Image
               src="/logo/tagslogo.png"
@@ -48,6 +49,7 @@ const About: React.FC<Aboutprops> = ({ id }) => {
             </button>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     </section>
   );
