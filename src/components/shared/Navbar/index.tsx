@@ -4,23 +4,26 @@ import Navbutton from '@/components/ui/Navbutton';
 const Navbar: React.FC = () => {
   return (
     <nav className="bg-light-white shadow-md h-[80px] flex justify-center items-center w-full">
-      <div className="container w-full mx-14 mt-16 md:mt-0 lg:mx-0 xl:px-36 lg:ml-16 xl:ml-0">
+      <div className="container w-full mx-14 md:mt-0 lg:mx-0 xl:px-36 lg:ml-16 xl:ml-0">
         <div className="flex justify-between items-center w-full gap-4">
           <div className="flex items-center gap-[5px]">
-            <Image
-              src="/logo/tagslogo.png"
-              alt="Logo"
-              width={120}
-              height={40}
-              className="h-auto"
-            />
+            <a href="/" target="home">
+              <Image
+                src="/logo/tagslogo.png"
+                alt="Logo"
+                width={120}
+                height={40}
+                className="h-auto"
+              />
+            </a>
+
             <div className="hidden lg:flex">
-              <Navbutton title="Home" href="#home" />
-              <Navbutton title="Services" href="#services" />
-              <Navbutton title="Why Tags" href="#why-tags" />
-              <Navbutton title="Case Studies" href="#case-studies" />
+              <Navbutton title="Home" href="/" />
+              <Navbutton title="Services" href="/#services" />
+              <Navbutton title="Why Tags" href="/#why-tags" />
+              <Navbutton title="Case Studies" href="/#case-studies" />
               <div className="flex items-center">
-                <Navbutton title="Resources" href="#resources" />
+                <Navbutton title="Resources" href="/#resources" />
                 <svg
                   width="14"
                   height="7"
@@ -37,7 +40,7 @@ const Navbar: React.FC = () => {
                   />
                 </svg>
               </div>
-              <Navbutton title="About Us" href="#about-us" />
+              <Navbutton title="About Us" href="/#about-us" />
             </div>
           </div>
           <div className="flex items-center h-[51px]">
@@ -47,9 +50,9 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex md:hidden justify-center items-center mt-2">
+        {/* <div className="flex md:hidden justify-center items-center mt-2">
           <Navbutton title="Menu" href="home" />
-        </div>
+        </div> */}
       </div>
     </nav>
   );
