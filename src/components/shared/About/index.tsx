@@ -10,8 +10,8 @@ interface Aboutprops {
 const About: React.FC<Aboutprops> = ({ id }) => {
   return (
     <section id={id}>
-      <div className="bg-light-white w-full shadow-md h-auto max-h-max">
-        <div className="flex mx-10 lg:flex-row flex-col gap-12 xl:mx-36 lg:mx-20 justify-start mb-4">
+      <div className="bg-light-white w-full shadow-md h-auto max-h-max ">
+        <div className="flex mx-10 lg:flex-row lg:justify-center flex-col gap-12 xl:mx-36 lg:mx-20 justify-start mb-4">
           <div className="w-72 lg:mt-28">
             <Image
               src="/logo/tagslogo.png"
