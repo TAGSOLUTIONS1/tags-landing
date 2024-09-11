@@ -20,7 +20,7 @@ const BusinessTransform: React.FC<BusinessProps> = ({ id }) => {
         ></video>
 
         <div className="z-10 flex flex-col w-full h-full text-white">
-          <div className="lg:w-2/6 sm:text-center lg:text-left lg:ml-48 relative top-36">
+          <div className="mx-3 lg:w-2/6 md:w-1/2 md:mx-20 sm:mx-20 text-left lg:mx-48 relative top-36">
             <Heading
               title={'Transform Your Business with Global B2B Solutions'}
               color={'light-white'}
