@@ -73,7 +73,7 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
   const handleNextClick = () => {
     if (
       currentIndex == Math.floor(testimonials.length / 2) &&
-      windowWidth >= 800
+      windowWidth >= 660
     ) {
       setCurrentIndex(0);
       setCount(Math.ceil(testimonials.length / 2));
@@ -85,6 +85,9 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
       setCount(Math.ceil(testimonials.length / 3));
     } else {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+      if (windowWidth < 660) {
+        setCount(Math.ceil(testimonials.length));
+      }
     }
   };
 
@@ -94,7 +97,6 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
       windowWidth >= 800) ||
     (currentIndex == Math.floor(testimonials.length / 3) &&
       windowWidth >= 1000);
-  console.log(' cc ', count);
 
   return (
     <section id={id}>

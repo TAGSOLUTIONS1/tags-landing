@@ -11,8 +11,8 @@ interface CardProps {
 
 const CardInclusive: React.FC<CardProps> = (props) => {
   return (
-    <div className="bg-light-white p-4 gap-[46px] rounded-2xl max-w-md">
-      <div>
+    <div className="bg-light-white p-4 rounded-2xl max-w-md mx-auto flex flex-col items-center">
+      <div className="w-full">
         <Image
           className="w-[434px] h-[358px] rounded-2xl"
           src={props.image}
@@ -21,8 +21,8 @@ const CardInclusive: React.FC<CardProps> = (props) => {
           height={358}
         />
       </div>
-      <p className="text-p1 mt-10">{props.description}</p>
-      <div className="mt-10 text-center">
+      <p className="text-p1 mt-6 text-black text-center">{props.description}</p>
+      <div className="mt-6">
         <Button title={props.buttoncontent} />
       </div>
     </div>

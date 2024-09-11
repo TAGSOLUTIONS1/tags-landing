@@ -3,45 +3,55 @@ import Button from '@/components/ui/Button';
 import Navbutton from '@/components/ui/Navbutton';
 const Navbar: React.FC = () => {
   return (
-    <>
-      <nav className=" bg-light-white shadow-md">
-        <div className="container px-36">
-          <div className="flex justify-between md:flex w-full max-w-[1152px] items-center gap-[10px]">
-            <div className="flex items-center">
-              <Image
-                src="/logo/tagslogo.png"
-                alt="Logo"
-                width={120}
-                height={40}
-              />
-              <Navbutton title="Home"></Navbutton>
-              <Navbutton title="Services"></Navbutton>
-              <Navbutton title="Why Tags"></Navbutton>
-              <Navbutton title="Case Studies"></Navbutton>
-              <div className="flex items-center w-[136px] h-[51px] ">
-                <Navbutton title="Resources"></Navbutton>
+    <nav className="bg-light-white shadow-md h-[80px] flex justify-center items-center w-full">
+      <div className="container w-full mx-14 mt-16 md:mt-0 lg:mx-0 xl:px-36 lg:ml-16 xl:ml-0">
+        <div className="flex justify-between items-center w-full gap-4">
+          <div className="flex items-center gap-[5px]">
+            <Image
+              src="/logo/tagslogo.png"
+              alt="Logo"
+              width={120}
+              height={40}
+              className="h-auto"
+            />
+            <div className="hidden lg:flex">
+              <Navbutton title="Home" href="#home" />
+              <Navbutton title="Services" href="#services" />
+              <Navbutton title="Why Tags" href="#why-tags" />
+              <Navbutton title="Case Studies" href="#case-studies" />
+              <div className="flex items-center">
+                <Navbutton title="Resources" href="#resources" />
                 <svg
                   width="14"
                   height="7"
                   viewBox="0 0 14 7"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="ml-1"
                 >
                   <path
                     d="M13.4286 0.928675L8.20954 5.40215C7.76015 5.78734 7.09703 5.78734 6.64764 5.40215L1.42859 0.928676"
                     stroke="#4F4A45"
-                    stroke-width="1.1"
-                    stroke-linecap="round"
+                    strokeWidth="1.1"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>
-              <Navbutton title="About Us"></Navbutton>
+              <Navbutton title="About Us" href="#about-us" />
             </div>
-            <Button title="Contact Us"></Button>
+          </div>
+          <div className="flex items-center h-[51px]">
+            <div className="hidden lg:block">
+              <Button title="Contact Us" />
+            </div>
           </div>
         </div>
-      </nav>
-    </>
+
+        <div className="flex md:hidden justify-center items-center mt-2">
+          <Navbutton title="Menu" href="home" />
+        </div>
+      </div>
+    </nav>
   );
 };
 

@@ -32,7 +32,7 @@ const Certifications: React.FC = () => {
         <Swiper
           modules={[Autoplay]}
           spaceBetween={20}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 500 }}
           loop={true}
           breakpoints={{
             640: {
@@ -57,7 +57,7 @@ const Certifications: React.FC = () => {
                   width={156}
                   height={60}
                   src={logo.src}
-                  className="object-contain mix-blend-luminosity transition-all duration-300 w-[156px] h-[60px]"
+                  className="object-contain mix-blend-luminosity transition-all duration-300 w-[156px] h-[60px] pl-16 sm:pl-0"
                   alt={logo.alt}
                 />
               </div>

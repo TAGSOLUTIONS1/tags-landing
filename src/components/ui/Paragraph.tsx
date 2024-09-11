@@ -7,7 +7,7 @@ interface ParagraphProps {
 const Paragraph = (props: ParagraphProps) => {
   return (
     <>
-      <p className={`text-p1 text-${props.color}`}>{props.title}</p>
+      <p className={`text-hh4 text-${props.color}`}>{props.title}</p>
     </>
   );
 };
