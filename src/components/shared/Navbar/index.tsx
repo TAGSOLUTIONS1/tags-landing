@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import Navbutton from '@/components/ui/Navbutton';
-
 const Navbar: React.FC = () => {
   return (
     <nav className="bg-light-white shadow-md h-[80px] flex justify-center items-center w-full">
