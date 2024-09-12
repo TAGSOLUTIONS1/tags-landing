@@ -20,7 +20,7 @@ const IndustryTestimonial = () => {
       company: 'Cengage Group',
       rating: 5,
       feedback:
-        'The solutions provided by Tags have revolutionized our approach to education. From advanced learning technologies to streamlined administration.',
+        'The solutions provided by Tags have revolutionized our approach to education. From advanced learning technologies to streamlined administration, they have been a critical partner in our success',
       image: '/images/testimonial4.png',
     },
     {
@@ -107,7 +107,7 @@ const IndustryTestimonial = () => {
           {slides.map((testimonial, idx) => (
             <div
               key={idx}
-              className="w-full flex-shrink-0 p-5"
+              className="w-full flex-shrink-0 p-4"
               style={{ width: `${100 / visibleSlides}%` }}
             >
               <IndusryTestCard key={idx} {...testimonial} />

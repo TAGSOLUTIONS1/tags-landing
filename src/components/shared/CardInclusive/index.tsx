@@ -1,27 +1,25 @@
 import React from 'react';
-import Image from 'next/image';
 import Button from '@/components/ui/Button';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 interface CardProps {
   description: string;
   buttoncontent: string;
-  image: string | StaticImport;
+  image: string;
 }
 
 const CardInclusive: React.FC<CardProps> = (props) => {
   return (
     <div className="bg-light-white p-4 rounded-2xl max-w-md mx-auto flex flex-col items-center">
-      <div className="w-full">
-        <Image
-          className="w-[434px] h-[358px] rounded-2xl"
+      <div className="w-full h-[358px] rounded-2xl overflow-hidden">
+        <video
+          className="w-full h-full object-cover rounded-2xl"
           src={props.image}
-          alt="Logo"
-          width={434}
-          height={358}
-        />
+          autoPlay
+          loop
+          muted
+        ></video>
       </div>
-      <p className="text-p1 mt-6 text-black text-center">{props.description}</p>
+      <p className="text-p1 mt-6 text-black text-left">{props.description}</p>
       <div className="mt-6">
         <Button title={props.buttoncontent} />
       </div>

@@ -25,8 +25,10 @@ const IndusryTestCard = (props: TestimonialCardProps) => {
               className="w-20 h-20 rounded-[80px]"
             />
             <div>
-              <h3 className="text-lg font-semibold">{props.name}</h3>
-              <p className="text-sm text-gray-500">
+              <h3 className="text-lg font-semibold text-dark-nameclr">
+                {props.name}
+              </h3>
+              <p className="text-sm text-dark-ceoclr">
                 {props.role} at {props.company}
               </p>
             </div>
@@ -49,7 +51,7 @@ const IndusryTestCard = (props: TestimonialCardProps) => {
           ))}
           <p className="ml-2 text-gray-600">{props.rating}.0</p>
         </div>
-        <p className="text-hh4 text-gray-700">{props.feedback}</p>
+        <p className="text-hh4 text-black">{props.feedback}</p>
       </div>
     </>
   );

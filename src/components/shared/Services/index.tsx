@@ -1,12 +1,12 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Heading from '@/components/ui/Heading';
 import CardInclusive from '@/components/shared/CardInclusive';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
-interface Servicesprops {
+interface ServicesProps {
   id: string;
 }
 
@@ -15,27 +15,35 @@ const data = [
     title: 'DATA AND AI',
     description:
       'Unlock the power of your data with advanced AI solutions. We transform raw data into actionable insights, helping your business make smarter decisions and stay ahead of the competition.',
-    image: '/images/cardpic.jpg',
+    image: '/videos/service2.mp4',
   },
   {
     title: 'Enterprise Softwares',
     description:
       'Streamline your business operations with custom enterprise software. Our solutions are tailored to meet your unique needs, improving efficiency, scalability, and productivity across your organization.',
-    image: '/images/cardpic.jpg',
+    image: '/videos/service2.mp4',
   },
   {
     title: 'Cloud Engineering',
     description:
       'Optimize your IT infrastructure with our cloud engineering services. We design, deploy, and manage secure, scalable cloud environments, ensuring your business runs smoothly and efficiently.',
-    image: '/images/cardpic.jpg',
+    image: '/videos/service3.mp4',
   },
 ];
 
-const Services: React.FC<Servicesprops> = ({ id }) => {
+const Services: React.FC<ServicesProps> = ({ id }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef<any>(null);
+
+  const handleHeadingClick = (index: number) => {
+    setActiveIndex(index);
+    if (swiperRef.current) {
+      swiperRef.current.slideToLoop(index);
+    }
+  };
 
   return (
-    <section id={id} className="bg-black text-white mt-10">
+    <section id={id} className="bg-black text-white mt-20">
       <div className="container mx-auto px-4 py-10">
         <div className="text-center mb-10">
           <Heading title="The Services We Offer" color="orange-primary" />
@@ -43,7 +51,11 @@ const Services: React.FC<Servicesprops> = ({ id }) => {
         <div className="flex flex-col lg:flex-row lg:items-center">
           <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-4 flex flex-col justify-start xl:px-24 lg:px-16 sm:px-20">
             {data.map((item, index) => (
-              <div key={index} className="flex items-center mb-4">
+              <div
+                key={index}
+                className="flex items-center mb-4 cursor-pointer"
+                onClick={() => handleHeadingClick(index)}
+              >
                 <p
                   className={`text-orange-primary mr-3 font-extrabold ${activeIndex === index ? 'block' : 'hidden'}`}
                 >
@@ -55,8 +67,6 @@ const Services: React.FC<Servicesprops> = ({ id }) => {
                   ______
                 </p>
                 <div className="flex items-center">
-                  {' '}
-                  {/* Center Heading vertically */}
                   <Heading
                     title={item.title}
                     color={activeIndex === index ? 'orange-primary' : 'white'}
@@ -72,6 +82,7 @@ const Services: React.FC<Servicesprops> = ({ id }) => {
               autoplay={{ delay: 3000 }}
               loop={true}
               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
               className="mySwiper"
             >
               {data.map((item, index) => (
