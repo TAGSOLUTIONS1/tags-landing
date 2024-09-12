@@ -25,7 +25,7 @@ const Certifications: React.FC = () => {
 
   return (
     <div className="mt-16">
-      <p className="text-p4 text-dark-secondary text-center">
+      <p className="text-hh4 md:text-hh6  text-dark-secondary text-center">
         Our Employees are certified by Big Companies
       </p>
       <div className="mt-5">
@@ -57,7 +57,7 @@ const Certifications: React.FC = () => {
                   width={156}
                   height={60}
                   src={logo.src}
-                  className="object-contain mix-blend-luminosity transition-all duration-300 w-[156px] h-[60px] pl-16 sm:pl-0"
+                  className="object-contain mix-blend-luminosity transition-all duration-300 w-[156px] h-[60px] pl-12 ml-20 sm:ml-0 sm:pl-0"
                   alt={logo.alt}
                 />
               </div>

@@ -133,7 +133,7 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
                             height={36}
                           />
                         </div>
-                        <div>
+                        <div className="hover:underline text-dark-ceoclr">
                           <p className="text-hh4 lg:text-hh6 text-dark-p4 font-semibold mt-3 w-full">
                             {slide.description}
                           </p>

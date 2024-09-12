@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Paragraph from '@/components/ui/Paragraph';
 import Footer from '@/components/ui/Footer';
@@ -8,6 +8,8 @@ interface Aboutprops {
   id: string;
 }
 const About: React.FC<Aboutprops> = ({ id }) => {
+  const [isHovered, setHovered] = useState(false);
+
   return (
     <section id={id}>
       <div className="bg-light-white w-full shadow-md h-auto max-h-max ">
@@ -24,12 +26,18 @@ const About: React.FC<Aboutprops> = ({ id }) => {
               color="dark-secondary"
             />
           </div>
-          <div className="w-98 h-[216px] flex flex-col justify-between lg:mt-28">
-            <p className="text-p1 font-h-bold text-dark-secondary">Company</p>
-            <Paragraph title="About" color="dark-secondary" />
-            <Paragraph title="Services" color="dark-secondary" />
-            <Paragraph title="Testimonials" color="dark-secondary" />
-            <Paragraph title="Resources" color="dark-secondary" />
+          <div
+            className={`w-98 h-[216px] flex flex-col justify-between lg:mt-28 ${
+              isHovered ? 'text-orange-primary' : 'text-dark-secondary'
+            }`}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            <p className="text-p1 font-h-bold">Company</p>
+            <p className={`text-hh4`}>About</p>
+            <p className={`text-hh4`}>Serices</p>
+            <p className={`text-hh4`}>Testimonials</p>
+            <p className={`text-hh4`}>Resources</p>
           </div>
           <div className="w-98 h-[216px] flex flex-col justify-between lg:mt-28">
             <p className="text-p1 font-h-bold text-dark-secondary">Help</p>

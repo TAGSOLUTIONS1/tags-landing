@@ -13,28 +13,26 @@ const testimonials = [
   },
   {
     name: 'Steve Davis',
-    description: `""Tags turned my vision into a leading restaurant reservation platform. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future.""`,
+    description: `"Tags turned my vision into a leading restaurant reservation platform. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future."`,
     attribute: 'CEO at Have A Seat',
     image: '/images/testimonial2.jpg',
   },
   {
     name: 'Jason Wong',
     description:
-      'The custom analytics platform from Tags has given us powerful insights, driving better business decisions.',
+      '"The custom analytics platform from Tags has given us powerful insights, driving better business decisions."',
     attribute: 'CEO at Omnicharge',
     image: '/images/testimonial3.jpg',
   },
   {
     name: 'Jason Wang',
-    description:
-      "Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever.",
+    description: `"Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever."`,
     attribute: 'CEO at Omnicharge',
     image: '/images/testimonial4.png',
   },
   {
     name: 'Jason Wang3',
-    description:
-      "Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever.",
+    description: `"Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever."`,
     attribute: 'CEO at Omnicharge',
     image: '/images/testimonial1.png',
   },
