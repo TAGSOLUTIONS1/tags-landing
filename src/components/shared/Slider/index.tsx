@@ -62,7 +62,7 @@ const Slider: React.FC<SliderProps> = ({ id }) => {
               className="min-w-full flex flex-col lg:flex-row items-center justify-center px-8 md:px-12 lg:px-36 py-12 md:py-20 lg:py-24 gap-8"
             >
               <div className="lg:w-1/2 w-full text-left">
-                <p className=" text-hh7 sm:text-hh10 lg:text-hh13  text-lineHeight-h1 text-fontWeight-h1 font-bold text-black mt-1">
+                <p className=" text-hh7 sm:text-hh8 lg:text-hh13  text-lineHeight-h1 text-fontWeight-h1 font-bold text-black mt-1">
                   {slide.text}
                 </p>
                 <div className="mt-1">

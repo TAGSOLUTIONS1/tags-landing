@@ -29,11 +29,11 @@ interface ServicesProps {
 const IndustriesweServe: React.FC<ServicesProps> = ({ id }) => {
   return (
     <section id={id} className="mt-20">
-      <div className="container mx-auto text-center">
+      <div className="xl:mx-28 lg:mx-24 md:mx-20 mx-4 text-center p-4">
         <h2 className="text-hh7 md:text-hh9 font-bold text-dark-secondary">
-          Industries We Served
+          Industries We Serve
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-4 xl:mx-36 mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 h-[460px]">
           {industries.map((industry) => (
             <Industryservices
               key={industry.title}
@@ -45,7 +45,7 @@ const IndustriesweServe: React.FC<ServicesProps> = ({ id }) => {
         </div>
         <div className="mt-8">
           <a href="/Industry">
-            <button className="bg-orange-primary text-white px-5 py-3 h-12 rounded-lg font-bold hover:bg-orange-600">
+            <button className="bg-orange-primary text-white px-5 py-3 h-12 rounded-lg font-bold hover:bg-orange-600 transition-colors">
               Explore All Industries
             </button>
           </a>

@@ -15,7 +15,7 @@ const Industryservices = (props: ServicesProps) => {
       <div className="absolute inset-0 bg-industry"></div>{' '}
       <div className="absolute bottom-0 left-0 text-white text-start p-5">
         <h3 className="text-hh6 font-bold">{props.title}</h3>
-        <p className="text-hh4 mt-2 lg:mr-20">{props.description}</p>
+        <p className="text-hh4 mt-2 xl:mr-20 lg:mr-10">{props.description}</p>
       </div>
     </div>
   );
