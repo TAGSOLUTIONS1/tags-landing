@@ -32,7 +32,7 @@ const Certifications: React.FC = () => {
         <Swiper
           modules={[Autoplay]}
           spaceBetween={20}
-          autoplay={{ delay: 500 }}
+          // autoplay={{ delay: 500 }}
           loop={true}
           breakpoints={{
             640: {
@@ -48,19 +48,17 @@ const Certifications: React.FC = () => {
               slidesPerView: 6.4,
             },
           }}
-          className="mySwiper hover:mix-blend-normal mix-blend-luminosity"
+          className="mySwiper"
         >
           {logos.map((logo, index) => (
             <SwiperSlide key={index} className="">
-              <div className="mix-blend-luminosity">
                 <Image
                   width={156}
                   height={60}
                   src={logo.src}
-                  className="object-contain mix-blend-luminosity transition-all duration-300 w-[156px] h-[60px] pl-12 ml-20 sm:ml-0 sm:pl-0"
+                  className="grayscale hover:grayscale-0 object-contain transition-all duration-300 w-[156px] h-[60px] pl-12 ml-20 sm:ml-0 sm:pl-0"
                   alt={logo.alt}
                 />
-              </div>
             </SwiperSlide>
           ))}
         </Swiper>
