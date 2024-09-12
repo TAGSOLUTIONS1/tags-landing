@@ -9,7 +9,7 @@ interface ServicesProps {
 const Industryservices = (props: ServicesProps) => {
   return (
     <div
-      className="relative bg-cover bg-center h-[460px] w-full rounded-2xl overflow-hidden shadow-industry"
+      className="relative bg-cover bg-center lg:h-[460px] h-[250px] w-full rounded-2xl overflow-hidden shadow-industry"
       style={{ backgroundImage: `url(${props.image})` }}
     >
       <div className="absolute inset-0 bg-industry"></div>{' '}

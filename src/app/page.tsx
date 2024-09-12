@@ -11,7 +11,7 @@ const Home = () => {
     <main>
       <Slider id="home" />
       <Certifications />
-      <IndustriesweServe id="industries"></IndustriesweServe>
+      <IndustriesweServe id="industries" />
       <Services id="services" />
       <Testimonials id="why-tags" />
       <CompaniesThrive id="case-studies" />

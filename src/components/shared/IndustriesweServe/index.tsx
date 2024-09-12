@@ -33,7 +33,7 @@ const IndustriesweServe: React.FC<ServicesProps> = ({ id }) => {
         <h2 className="text-hh7 md:text-hh9 font-bold text-dark-secondary">
           Industries We Serve
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 h-[460px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
           {industries.map((industry) => (
             <Industryservices
               key={industry.title}
