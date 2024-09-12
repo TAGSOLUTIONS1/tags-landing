@@ -4,12 +4,14 @@ import Testimonials from '@/components/shared/Testimonials';
 import BusinessTransform from '@/components/shared/BusinessTransform';
 import CompaniesThrive from '@/components/shared/CompaniesThrive';
 import Certifications from '@/components/shared/Certifications';
+import IndustriesweServe from '@/components/shared/IndustriesweServe';
 
 const Home = () => {
   return (
     <main>
       <Slider id="home" />
       <Certifications />
+      <IndustriesweServe id="industries"></IndustriesweServe>
       <Services id="services" />
       <Testimonials id="why-tags" />
       <CompaniesThrive id="case-studies" />
