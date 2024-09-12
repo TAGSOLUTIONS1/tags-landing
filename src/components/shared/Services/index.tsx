@@ -15,19 +15,19 @@ const data = [
     title: 'DATA AND AI',
     description:
       'Unlock the power of your data with advanced AI solutions. We transform raw data into actionable insights, helping your business make smarter decisions and stay ahead of the competition.',
-    image: '/videos/service2.mp4',
+    image: '/videos/servicex.mp4',
   },
   {
     title: 'Enterprise Softwares',
     description:
       'Streamline your business operations with custom enterprise software. Our solutions are tailored to meet your unique needs, improving efficiency, scalability, and productivity across your organization.',
-    image: '/videos/service2.mp4',
+    image: '/videos/servicex.mp4',
   },
   {
     title: 'Cloud Engineering',
     description:
       'Optimize your IT infrastructure with our cloud engineering services. We design, deploy, and manage secure, scalable cloud environments, ensuring your business runs smoothly and efficiently.',
-    image: '/videos/service3.mp4',
+    image: '/videos/servicexx.mp4',
   },
 ];
 
