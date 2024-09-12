@@ -28,7 +28,7 @@ interface ServicesProps {
 
 const IndustriesweServe: React.FC<ServicesProps> = ({ id }) => {
   return (
-    <section id={id} className="mt-10">
+    <section id={id} className="mt-20">
       <div className="container mx-auto text-center">
         <h2 className="text-hh7 md:text-hh9 font-bold text-dark-secondary">
           Industries We Served
@@ -45,7 +45,7 @@ const IndustriesweServe: React.FC<ServicesProps> = ({ id }) => {
         </div>
         <div className="mt-8">
           <a href="/Industry">
-            <button className="bg-orange-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-orange-600 transition">
+            <button className="bg-orange-primary text-white px-5 py-3 h-12 rounded-lg font-bold hover:bg-orange-600">
               Explore All Industries
             </button>
           </a>

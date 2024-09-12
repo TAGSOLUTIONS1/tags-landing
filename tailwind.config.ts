@@ -142,6 +142,11 @@ module.exports = {
       boxShadow: {
         custom: '0px 4px 4px 0px #00000040',
         globe: '0px 1px 6px 15px rgba(25, 33, 61, 0.08)',
+        industry: '3px 6px 6.7px 3px #00000040',
+      },
+      backgroundImage: {
+        industry:
+          'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 91.36%)',
       },
       mixBlendMode: {
         luminosity: 'luminosity',

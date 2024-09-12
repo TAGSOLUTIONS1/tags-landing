@@ -9,16 +9,19 @@ const slides = [
     text: 'Transform Your Business with Generative AI',
     description:
       'Unlock new levels of innovation and efficiency with our cutting-edge generative AI solutions.',
+    image: '/images/sliderpic.jpg',
   },
   {
-    text: 'Revolutionize Your Workflow',
+    text: 'Tailored Solutions for Your Unique Business Needs',
     description:
-      'Leverage AI to streamline your processes and achieve unprecedented productivity.',
+      'Our custom service solutions are designed to meet the specific challenges and goals of your business',
+    image: '/images/slider2.jpg',
   },
   {
-    text: 'The Future of AI is Here',
+    text: 'Trusted by Industry Leaders Like Meta',
     description:
-      'Join the AI revolution and stay ahead of the curve with our innovative solutions.',
+      'Join forces with top companies like Meta who trust our expertise to drive their business forward',
+    image: '/images/sliderpic.jpg',
   },
 ];
 
@@ -28,7 +31,7 @@ interface SliderProps {
 
 const Slider: React.FC<SliderProps> = ({ id }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const autoplayInterval = 2000;
+  const autoplayInterval = 5000;
   const handlePrevClick = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + slides.length) % slides.length,
@@ -75,7 +78,7 @@ const Slider: React.FC<SliderProps> = ({ id }) => {
               <div className="lg:w-1/2 w-full flex justify-center ">
                 <div className="w-full h-[405px] overflow-hidden">
                   <Image
-                    src="/images/sliderpic.jpg"
+                    src={slide.image}
                     alt={slide.text}
                     width={556}
                     height={405}
