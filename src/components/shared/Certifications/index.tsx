@@ -52,13 +52,13 @@ const Certifications: React.FC = () => {
         >
           {logos.map((logo, index) => (
             <SwiperSlide key={index} className="">
-                <Image
-                  width={156}
-                  height={60}
-                  src={logo.src}
-                  className="grayscale hover:grayscale-0 object-contain transition-all duration-300 w-[156px] h-[60px] pl-12 ml-20 sm:ml-0 sm:pl-0"
-                  alt={logo.alt}
-                />
+              <Image
+                width={156}
+                height={60}
+                src={logo.src}
+                className="grayscale hover:grayscale-0 object-contain transition-all duration-300 w-[156px] h-[60px] pl-12 ml-20 sm:ml-0 sm:pl-0"
+                alt={logo.alt}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
