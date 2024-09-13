@@ -5,13 +5,12 @@ import Upcity from '@/components/svg/Upcity';
 const IndustriesServe: React.FC = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full -mt-12">
         <div className="min-h-[300px] flex flex-col justify-center items-center gap-[45px] my-[75px]">
-          <div className="items-center max-w-[615px] mx-1 text-center">
+          <div className="items-center max-w-[615px] mx-1 text-center mt-10">
             <p className="font-bold text-hh8 md:text-hh10 text-dark-nameclr text-center">
               Industries We Serve
             </p>
-            {/* <Heading color={'text-dark-nameclr'} title={'Industries We Serve'}></Heading> */}
             <p className="text-hh3 sm:text-hh4 font-normal text-lineHeight-p3 text-center">
               At TAGS, we specialize in providing tailored solutions across
               diverse industries. Whether you&apos;re in manufacturing,
