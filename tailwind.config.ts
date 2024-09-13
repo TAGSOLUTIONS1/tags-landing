@@ -152,6 +152,15 @@ module.exports = {
         luminosity: 'luminosity',
         normal: 'normal',
       },
+      animation: {
+        logos: 'logos 20s linear infinite',
+      },
+      keyframes: {
+        logos: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
     },
   },
   plugins: [],

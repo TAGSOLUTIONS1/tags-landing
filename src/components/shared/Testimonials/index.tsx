@@ -9,32 +9,32 @@ const testimonials = [
     name: 'Brandon Moore',
     description: `"Tags brought FindxStorage to life with a seamless, user-friendly platform that sets us apart. Their AI expertise and industry knowledge have positioned us for success. Tags delivered not just a product, but our vision."`,
     attribute: 'CEO at FindxStorage',
-    image: '/images/testimonial1.png',
+    image: '/icons/maleicon.png',
   },
   {
-    name: 'Steve Davis',
+    name: 'Steven Davis',
     description: `"Tags turned my vision into a leading restaurant reservation platform. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future."`,
     attribute: 'CEO at Have A Seat',
-    image: '/images/testimonial2.jpg',
+    image: '/images/steven.jpg',
   },
   {
     name: 'Jason Wong',
     description:
       '"The custom analytics platform from Tags has given us powerful insights, driving better business decisions."',
     attribute: 'CEO at Omnicharge',
-    image: '/images/testimonial3.jpg',
+    image: '/images/testimonial2.jpg',
   },
   {
-    name: 'Jason Wang',
+    name: 'Joe',
     description: `"Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever."`,
-    attribute: 'CEO at Omnicharge',
-    image: '/images/testimonial4.png',
-  },
-  {
-    name: 'Jason Wang3',
-    description: `"Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever."`,
-    attribute: 'CEO at Omnicharge',
+    attribute: 'Client',
     image: '/images/testimonial1.png',
+  },
+  {
+    name: 'Smith',
+    description: `TAGS is a highly professional and efficient company, skilled in breaking down tasks and gathering precise requirements. Their focus on component-based development makes them ideal for projects with tight deadlines.`,
+    attribute: 'Upwork Client',
+    image: '/images/testimonial4.png',
   },
   // incase want to add more ;;
 ];
@@ -110,7 +110,7 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
         <div className="relative flex justify-center items-center mt-10">
           <button
             onClick={handlePrevClick}
-            className={`absolute left-3 top-1/2 transform -translate-y-1/2 text-black w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md z-10 ${isPrevDisabled ? 'opacity-10' : ''}`}
+            className={`absolute left-3 top-1/2 transform -translate-y-1/2 text-black w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md z-10 ${isPrevDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             <ChevronLeft />
           </button>

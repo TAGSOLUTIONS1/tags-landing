@@ -1,67 +1,74 @@
 'use client';
-import React from 'react';
+
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
+
+interface Logo {
+  src: string;
+  alt: string;
+}
+
+const logos: Logo[] = [
+  { src: '/logo/google.png', alt: 'googlelogo' },
+  { src: '/logo/ailogo.png', alt: 'openailogo' },
+  { src: '/logo/microsoft.png', alt: 'microsoftlogo' },
+  { src: '/logo/linkedin.png', alt: 'linkedinlogo' },
+  { src: '/logo/hubspot.png', alt: 'hubspotlogo' },
+  { src: '/logo/meta.png', alt: 'metalogo' },
+  { src: '/logo/webflow.png', alt: 'webflowlogo' },
+  { src: '/logo/google.png', alt: 'googlelogo' },
+  { src: '/logo/ailogo.png', alt: 'openailogo' },
+  { src: '/logo/microsoft.png', alt: 'microsoftlogo' },
+  { src: '/logo/linkedin.png', alt: 'linkedinlogo' },
+  { src: '/logo/hubspot.png', alt: 'hubspotlogo' },
+  { src: '/logo/meta.png', alt: 'metalogo' },
+  { src: '/logo/webflow.png', alt: 'webflowlogo' },
+];
 
 const Certifications: React.FC = () => {
-  const logos = [
-    { src: '/logo/google.png', alt: 'googlelogo' },
-    { src: '/logo/openai.png', alt: 'openailogo' },
-    { src: '/logo/microsoft.png', alt: 'microsoftlogo' },
-    { src: '/logo/linkedin.png', alt: 'linkedinlogo' },
-    { src: '/logo/hubspot.png', alt: 'hubspotlogo' },
-    { src: '/logo/meta.png', alt: 'metalogo' },
-    { src: '/logo/webflow.png', alt: 'webflowlogo' },
-    { src: '/logo/google.png', alt: 'googlelogo' },
-    { src: '/logo/openai.png', alt: 'openailogo' },
-    { src: '/logo/microsoft.png', alt: 'microsoftlogo' },
-    { src: '/logo/linkedin.png', alt: 'linkedinlogo' },
-    { src: '/logo/hubspot.png', alt: 'hubspotlogo' },
-    { src: '/logo/meta.png', alt: 'metalogo' },
-    { src: '/logo/webflow.png', alt: 'webflowlogo' },
-  ];
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (slider) {
+      let scrollAmount = 0;
+      const slideWidth = slider.scrollWidth / 2;
+      const speed = 1;
+
+      const moveSlider = () => {
+        scrollAmount += speed;
+        if (scrollAmount >= slideWidth) {
+          scrollAmount = 0;
+        }
+        slider.scrollTo({
+          left: scrollAmount,
+          behavior: 'smooth',
+        });
+        requestAnimationFrame(moveSlider);
+      };
+      moveSlider();
+    }
+  }, []);
 
   return (
-    <div className="mt-16">
-      <p className="text-hh4 md:text-hh6  text-dark-secondary text-center">
+    <div className="mt-16 overflow-hidden">
+      <p className="text-hh4 md:text-hh6 text-dark-secondary text-center">
         Our Employees are certified by Big Companies
       </p>
-      <div className="mt-5">
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={20}
-          // autoplay={{ delay: 500 }}
-          loop={true}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-            1024: {
-              slidesPerView: 4,
-            },
-            1280: {
-              slidesPerView: 6.4,
-            },
-          }}
-          className="mySwiper"
-        >
+      <div ref={sliderRef} className="mt-5 flex w-full">
+        <div className="flex gap-20 items-center animate-logos">
           {logos.map((logo, index) => (
-            <SwiperSlide key={index} className="">
+            <div key={index} className="flex-shrink-0">
               <Image
+                src={logo.src}
                 width={156}
                 height={60}
-                src={logo.src}
-                className="grayscale hover:grayscale-0 object-contain transition-all duration-300 w-[156px] h-[60px] pl-12 ml-20 sm:ml-0 sm:pl-0"
+                className="grayscale hover:grayscale-0 object-contain transition-all duration-300"
                 alt={logo.alt}
               />
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+        </div>
       </div>
     </div>
   );
