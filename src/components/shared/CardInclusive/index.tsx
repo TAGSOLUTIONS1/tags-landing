@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@/components/ui/Button';
-
+import Link from 'next/link';
 interface CardProps {
   description: string;
   buttoncontent: string;
@@ -20,9 +20,11 @@ const CardInclusive: React.FC<CardProps> = (props) => {
         ></video>
       </div>
       <p className="text-p1 mt-6 text-black text-left">{props.description}</p>
-      <div className="mt-6">
-        <Button title={props.buttoncontent} />
-      </div>
+      <Link href={'/Industry'}>
+        <div className="mt-6">
+          <Button title={props.buttoncontent} />
+        </div>
+      </Link>
     </div>
   );
 };
