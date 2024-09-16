@@ -1,5 +1,6 @@
 import React from 'react';
-import Linkedinicon from '../svg/Linkedinicon';
+// import Linkedinicon from '../svg/Linkedinicon';
+// import Link from 'next/link';
 import Image from 'next/image';
 
 interface TestimonialCardProps {
@@ -22,7 +23,7 @@ const IndusryTestCard = (props: TestimonialCardProps) => {
               alt={props.name}
               width={80}
               height={80}
-              className="w-20 h-20 rounded-[80px]"
+              className="w-20 h-20 rounded-[80px] grayscale"
             />
             <div>
               <h3 className="text-lg font-semibold text-dark-nameclr">
@@ -33,9 +34,9 @@ const IndusryTestCard = (props: TestimonialCardProps) => {
               </p>
             </div>
           </div>
-          <a href="#" className="ml-auto">
+          {/* <Link href="#" className="ml-auto">
             <Linkedinicon />
-          </a>
+          </Link> */}
         </div>
 
         <div className="flex items-center my-4">

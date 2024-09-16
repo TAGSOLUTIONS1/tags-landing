@@ -1,6 +1,6 @@
 import IndustriesServe from '@/components/shared/IndustriesServe';
 import IndustriesServeCards from '@/components/shared/IndustriesServeCards';
-import DiveDeeper from '@/components/shared/DiveDeeper';
+// import DiveDeeper from '@/components/shared/DiveDeeper';
 import IndustryTestimonial from '@/components/shared/IndustryTestimonial';
 const Industry = () => {
   return (
@@ -8,7 +8,7 @@ const Industry = () => {
       <IndustriesServe />
       <IndustriesServeCards></IndustriesServeCards>
       <IndustryTestimonial></IndustryTestimonial>
-      <DiveDeeper></DiveDeeper>
+      {/* <DiveDeeper></DiveDeeper> */}
     </main>
   );
 };

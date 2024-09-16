@@ -12,7 +12,7 @@ const IndustryTestimonial = () => {
       rating: 5,
       feedback:
         'The innovative solutions provided by Tags have allowed us to scale rapidly and stay ahead in a competitive tech landscape. Their support has been instrumental in our success.',
-      image: '/images/testimonial1.png',
+      image: '/icons/maleicon.png',
     },
     {
       name: 'Audrey Wyrick',
@@ -30,7 +30,7 @@ const IndustryTestimonial = () => {
       rating: 5,
       feedback:
         'The project management solutions from Tags have been instrumental in completing our projects on time and within budget. Their expertise has also set us apart from the competition',
-      image: '/images/testimonial3.jpg',
+      image: '/images/testimonial2.jpg',
     },
   ];
 
@@ -96,7 +96,7 @@ const IndustryTestimonial = () => {
         </div>
       </div>
 
-      <div className="relative overflow-hidden w-full max-w-[90vw] md:max-w-[100vw] sm:mx-10 mx-5">
+      <div className="relative overflow-hidden w-full max-w-[90vw] md:max-w-[100vw] sm:mx-10 mx-5 mb-10">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{

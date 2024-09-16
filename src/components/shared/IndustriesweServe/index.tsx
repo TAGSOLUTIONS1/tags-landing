@@ -1,5 +1,6 @@
 import React from 'react';
 import Industryservices from '@/components/ui/Industryservices';
+import Link from 'next/link';
 
 const industries = [
   {
@@ -44,11 +45,11 @@ const IndustriesweServe: React.FC<ServicesProps> = ({ id }) => {
           ))}
         </div>
         <div className="mt-8">
-          <a href="/Industry">
+          <Link href="/Industry">
             <button className="bg-orange-primary text-white px-5 py-3 h-12 rounded-lg font-bold hover:bg-orange-600 transition-colors">
               Explore All Industries
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

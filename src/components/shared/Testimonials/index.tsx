@@ -32,7 +32,7 @@ const testimonials = [
   },
   {
     name: 'Smith',
-    description: `TAGS is a highly professional and efficient company, skilled in breaking down tasks and gathering precise requirements. Their focus on component-based development makes them ideal for projects with tight deadlines.`,
+    description: `"TAGS is a highly professional and efficient company, skilled in breaking down tasks and gathering precise requirements. Their focus on component-based development makes them ideal for projects with tight deadlines."`,
     attribute: 'Upwork Client',
     image: '/images/testimonial4.png',
   },

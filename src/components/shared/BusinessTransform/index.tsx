@@ -1,6 +1,7 @@
 import Button from '@/components/ui/Button';
 import Heading from '@/components/ui/Heading';
 import Paragraph from '@/components/ui/Paragraph';
+import Link from 'next/link';
 import React from 'react';
 
 interface BusinessProps {
@@ -38,9 +39,11 @@ const BusinessTransform: React.FC<BusinessProps> = ({ id }) => {
                 placeholder="Enter your email address"
                 className="relative w-full h-[66px] py-2 pl-2 pr-[150px] bg-light-white text-white rounded-lg border mt-6"
               />
-              <div className="absolute inset-y-0 top-6 right-0 flex items-center pr-2">
-                <Button title={'Contact Us'} />
-              </div>
+              <Link href={'/#about-us'}>
+                <div className="absolute inset-y-0 top-6 right-0 flex items-center pr-2">
+                  <Button title={'Contact Us'} />
+                </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -8,24 +8,24 @@ import ReadMoreIcon from '@/components/ui/ReadMoreIcon';
 
 const slides = [
   {
-    text: 'Transform Your Business with Generative AI',
     description:
       'Implemented an AI system to tailor user experiences with real-time recommendations. This increased relevance and engagement across the platform.',
+    image: '/images/thrive.jpg',
   },
   {
-    text: 'Transform Your Business with Generative AI',
     description:
-      'head2 Implemented an AI system to tailor user experiences with real-time recommendations. This increased relevance and engagement across the platform.',
+      'Integrated AI into FindxStorage, optimizing unit selection by analyzing customer behavior, leading to increased user satisfaction.',
+    image: '/images/thrive2.png',
   },
   {
-    text: 'Transform Your Business with Generative AI',
     description:
-      'head 3 Implemented an AI system to tailor user experiences with real-time recommendations. This increased relevance and engagement across the platform.',
+      'Implemented AI on Have a Seat, tailoring restaurant suggestions based on user preferences, enhancing booking efficiency.',
+    image: '/images/thrive3.png',
   },
   {
-    text: 'Transform Your Business with Generative AI',
     description:
-      'head4 Implemented an AI system to tailor user experiences with real-time recommendations. This increased relevance and engagement across the platform.',
+      'Leveraged AI for Have a Seat to deliver dynamic dining recommendations, boosting user interaction and simplifying the reservation process.',
+    image: '/images/thrive4.png',
   },
 ];
 
@@ -168,7 +168,7 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
                       </div>
                       <div className="hidden lg:w-1/2 md:flex justify-end">
                         <Image
-                          src="/images/thrive.jpg"
+                          src={slide.image}
                           width={472}
                           height={429}
                           alt="thrive"

@@ -21,12 +21,6 @@ const IndustriesServeCards = () => {
         'We help marketing and creative agencies ditch the busywork and focus on building client relationships.',
     },
     {
-      icon: <Construction />,
-      title: 'Construction',
-      description:
-        'We know how to beat seasonality issues in the construction sector to double your profits.',
-    },
-    {
       icon: <Consulting />,
       title: 'Consulting',
       description:
@@ -79,6 +73,12 @@ const IndustriesServeCards = () => {
       title: 'SaaS services',
       description:
         'Enhance your sales pipeline with our expertise in generating high-quality prospects in the SaaS field.',
+    },
+    {
+      icon: <Construction />,
+      title: 'Digital Marketing',
+      description:
+        'Boost your software business with proven digital marketing and SEO strategies to drive traffic, increase visibility, and double your growth.',
     },
   ];
 

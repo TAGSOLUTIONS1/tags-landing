@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import Paragraph from '@/components/ui/Paragraph';
+import Link from 'next/link';
 const slides = [
   {
     text: 'Transform Your Business with Generative AI',
@@ -21,7 +22,7 @@ const slides = [
     text: 'Trusted by Industry Leaders Like Meta',
     description:
       'Join forces with top companies like Meta who trust our expertise to drive their business forward',
-    image: '/images/sliderpic.jpg',
+    image: '/images/slider3.jpg',
   },
 ];
 
@@ -71,9 +72,11 @@ const Slider: React.FC<SliderProps> = ({ id }) => {
                     title={slide.description}
                   ></Paragraph>
                 </div>
-                <div className="mt-5">
-                  <Button title="Learn More"></Button>
-                </div>
+                <Link href={'/Industry'}>
+                  <div className="mt-5">
+                    <Button title="Learn More"></Button>
+                  </div>
+                </Link>
               </div>
               <div className="lg:w-1/2 w-full flex justify-center ">
                 <div className="w-full h-[405px] overflow-hidden">
