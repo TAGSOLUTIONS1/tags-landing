@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo/tagslogo.png" />
+        <link rel="icon" href="/logo/favicon.png" />
       </head>
       <body className={inter.className}>
         <Navbar />
