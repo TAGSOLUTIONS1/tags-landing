@@ -1,34 +1,57 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
+import Paragraph from '@/components/ui/Paragraph';
+import Link from 'next/link';
+import { Next } from '@/components/svg/Next';
 
-export const CaseStudyTop: React.FC = () => {
+const CaseStudyTop = () => {
   return (
-    <section className="bg-gray-50 p-8 flex justify-between items-center">
-      <div className="space-y-4 max-w-lg">
-        <h2 className="text-orange-600 uppercase tracking-wide">
-          Case Studies
-        </h2>
-        <h1 className="text-4xl font-bold">
-          Success Stories: Technology That Delivers Impact
-        </h1>
-        <p className="text-gray-600">
-          See how TAGS has helped businesses across industries achieve their
-          goals with innovative tech solutions.
-        </p>
-        <button className="bg-orange-500 text-white py-2 px-6 rounded-full shadow-md hover:bg-orange-600 transition">
-          Contact us
-        </button>
+    <>
+      <div className="bg-light-background min-w-full flex flex-col lg:flex-row items-center justify-center px-14 lg:px-20 lg:py-16 gap-8">
+        <div className="lg:w-1/2 w-full text-left flex flex-col justify-between space-y-4">
+          <p className="text-orange-case text-lg font-semibold mt-5 lg:mt-0">
+            CASE STUDIES
+          </p>
+          <p className="text-hh7 sm:text-hh8 lg:text-hh13 text-9xl text-fontWeight-h1 font-bold text-black w-10/12">
+            Success Stories: Technology That Delivers Impact
+          </p>
+          <div className="">
+            <Paragraph
+              color="black"
+              title={
+                'See how TAGS has helped businesses across industries achieve their goals with innovative tech solutions'
+              }
+            ></Paragraph>
+          </div>
+          <Link href={'/#about-us'}>
+            <div className="">
+              <button className="bg-orange-button text-white px-5 gap-3 py-4 rounded-xl hover:bg-orange-600 flex">
+                Contact Us
+                <Next></Next>
+              </button>
+            </div>
+          </Link>
+        </div>
+        <div className="lg:w-1/2 w-full flex justify-center">
+          <div className="bg-white p-3 pb-7 text-justify rounded-2xl shadow-md">
+            <Image
+              src="/images/casestudymain.jpg"
+              alt="Success Story"
+              width={600}
+              height={300}
+              className="rounded-lg"
+            />
+            <Link href="/Industry">
+              <p className="text-dark-p4 mt-7 ml-5 underline text-base font-semibold">
+                Learn More
+              </p>
+            </Link>
+          </div>
+        </div>
       </div>
-      <div>
-        <Image
-          src="/hero-image.jpg"
-          alt="Team working"
-          className="rounded-lg shadow-lg"
-        />
-        <button className="mt-4 underline text-gray-600 hover:text-gray-800 transition">
-          Learn more
-        </button>
-      </div>
-    </section>
+    </>
   );
 };
+
+export default CaseStudyTop;

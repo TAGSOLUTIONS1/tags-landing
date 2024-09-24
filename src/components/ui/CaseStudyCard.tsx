@@ -19,7 +19,13 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
 }) => {
   return (
     <div className="p-6 bg-white rounded-lg shadow-md">
-      <Image src={imageSrc} alt={title} className="rounded-lg mb-4" />
+      <Image
+        width={30}
+        height={30}
+        src={imageSrc}
+        alt={title}
+        className="rounded-lg mb-4"
+      />
       <div className="space-y-2">
         <span className="bg-gray-200 text-gray-600 px-2 py-1 text-sm rounded-full">
           Generative AI

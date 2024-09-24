@@ -14,6 +14,8 @@ module.exports = {
         light: {
           white: '#FFFFFF',
           cutomwhite: '#FBFBFB',
+          background: '#EBEBEB',
+          tags: '#F5F5F5',
         },
         dark: {
           secondary: '#4F4A45',
@@ -27,6 +29,8 @@ module.exports = {
         },
         orange: {
           primary: '#E46625',
+          case: '#F24A0D',
+          button: '#FF5E00',
         },
         red: {
           50: '#FFDFDD',
@@ -143,6 +147,7 @@ module.exports = {
         custom: '0px 4px 4px 0px #00000040',
         globe: '0px 1px 6px 15px rgba(25, 33, 61, 0.08)',
         industry: '3px 6px 6.7px 3px #00000040',
+        logos: '8px 24px 48px 2px rgba(22, 23, 24, 0.05)',
       },
       backgroundImage: {
         industry:
