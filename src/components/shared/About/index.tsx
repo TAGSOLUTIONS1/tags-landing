@@ -62,16 +62,6 @@ const About: React.FC<Aboutprops> = ({ id }) => {
               <li>contact@tags-ltd.com</li>
             </ul>
           </div>
-          {/* <div className="w-72 h-full flex flex-col justify-between lg:mt-28">
-            <input
-              type="text"
-              placeholder="Enter your email address"
-              className="lg:mt-12 w-full p-2 bg-light-white text-white rounded-[10px] border border-gray-200 h-[55px] items-center"
-            />
-            <button className="mt-3 bg-orange-primary text-white px-5 py-4 rounded-lg hover:bg-orange-600 w-full">
-              Subscribe now
-            </button>
-          </div> */}
         </div>
         <div className="flex justify-center mx-auto gap-10 mt-7 mb-4">
           <Link
