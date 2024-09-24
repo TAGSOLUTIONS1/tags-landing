@@ -1,7 +1,5 @@
-'use client';
 import Image from 'next/image';
 import React from 'react';
-import Paragraph from '@/components/ui/Paragraph';
 import Link from 'next/link';
 import { Next } from '@/components/svg/Next';
 
@@ -17,12 +15,10 @@ const CaseStudyTop = () => {
             Success Stories: Technology That Delivers Impact
           </p>
           <div className="">
-            <Paragraph
-              color="black"
-              title={
-                'See how TAGS has helped businesses across industries achieve their goals with innovative tech solutions'
-              }
-            ></Paragraph>
+            <p className="text-black text-lg w-3/4">
+              See how TAGS has helped businesses across industries achieve their
+              goals with innovative tech solutions.
+            </p>
           </div>
           <Link href={'/#about-us'}>
             <div className="">
@@ -42,7 +38,7 @@ const CaseStudyTop = () => {
               height={300}
               className="rounded-lg"
             />
-            <Link href="/Industry">
+            <Link href="/industry">
               <p className="text-dark-p4 mt-7 ml-5 underline text-base font-semibold">
                 Learn More
               </p>

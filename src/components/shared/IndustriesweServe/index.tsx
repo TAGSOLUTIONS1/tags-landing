@@ -45,7 +45,7 @@ const IndustriesweServe: React.FC<ServicesProps> = ({ id }) => {
           ))}
         </div>
         <div className="mt-8">
-          <Link href="/Industry">
+          <Link href="/industry">
             <button className="bg-orange-primary text-white px-5 py-3 h-12 rounded-lg font-bold hover:bg-orange-600 transition-colors">
               Explore All Industries
             </button>

@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
               <Navbutton title="Home" href="/" />
               <Navbutton title="Services" href="/#services" />
               <Navbutton title="Why Tags" href="/#why-tags" />
-              <Navbutton title="Case Studies" href="/#case-studies" />
+              <Navbutton title="Case Studies" href="/case-studies" />
               <Navbutton title="Industries" href="/#industries" />
               {/* <div className="flex items-center">
                 <Navbutton title="Resources" href="/#resources" />

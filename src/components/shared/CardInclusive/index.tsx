@@ -20,7 +20,7 @@ const CardInclusive: React.FC<CardProps> = (props) => {
         ></video>
       </div>
       <p className="text-p1 mt-6 text-black text-left">{props.description}</p>
-      <Link href={'/Industry'}>
+      <Link href={'/industry'}>
         <div className="mt-6">
           <Button title={props.buttoncontent} />
         </div>

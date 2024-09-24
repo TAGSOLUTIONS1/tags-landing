@@ -52,7 +52,7 @@ export const LatestCaseStudies = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {latestcasestudies.map((caseStudy, index) => (
           <div key={index} className="bg-white rounded-2xl shadow-lg">
-            <div className="max-h-[320px] overflow-hidden">
+            <div className="max-h-[210px] md:max-h-[180px] lg:max-h-[260px] xl:max-h-[320px] overflow-hidden">
               <Image
                 src={caseStudy.image}
                 alt={`Case Study ${index + 1}`}

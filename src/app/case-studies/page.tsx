@@ -1,4 +1,4 @@
-import CaseStudyLogoRow from '@/components/shared/CaseStudyLogoRow';
+// import CaseStudyLogoRow from '@/components/shared/CaseStudyLogoRow';
 import CaseStudyMain from '@/components/shared/CaseStudyMain';
 import CaseStudyTop from '@/components/shared/CaseStudyTop';
 import { LatestCaseStudies } from '@/components/shared/LatestCaseStudies';
@@ -8,7 +8,7 @@ const Casestudies = () => {
   return (
     <main className="overflow-x-hidden">
       <CaseStudyTop></CaseStudyTop>
-      <CaseStudyLogoRow></CaseStudyLogoRow>
+      {/* <CaseStudyLogoRow></CaseStudyLogoRow> */}
       <CaseStudyMain></CaseStudyMain>
       <LatestCaseStudies></LatestCaseStudies>
       <ReadytoInnovate></ReadytoInnovate>

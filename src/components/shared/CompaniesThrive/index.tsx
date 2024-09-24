@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Paragraph from '@/components/ui/Paragraph';
 import Image from 'next/image';
 import ReadMoreIcon from '@/components/ui/ReadMoreIcon';
+import Link from 'next/link';
 
 const slides = [
   {
@@ -158,13 +159,15 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
                             ></Paragraph>
                           </div>
                         </div>
-                        <div className="font-semibold flex items-center space-x-3 mt-3">
-                          <ReadMoreIcon></ReadMoreIcon>
-                          <Paragraph
-                            color={'dark-secondary'}
-                            title={'Read the case study'}
-                          ></Paragraph>
-                        </div>
+                        <Link href={'/case-studies'}>
+                          <div className="font-semibold flex items-center space-x-3 mt-3">
+                            <ReadMoreIcon></ReadMoreIcon>
+                            <Paragraph
+                              color={'dark-secondary'}
+                              title={'Read the case study'}
+                            ></Paragraph>
+                          </div>
+                        </Link>
                       </div>
                       <div className="hidden lg:w-1/2 md:flex justify-end">
                         <Image
