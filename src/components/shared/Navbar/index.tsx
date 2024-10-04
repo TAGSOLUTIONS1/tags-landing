@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
                   />
                 </svg>
               </div> */}
-              <Navbutton title="About Us" href="/#about-us" />
+              <Navbutton title="About Us" href="/about-us" />
             </div>
           </div>
           <div className="flex items-center h-[51px]">

@@ -16,6 +16,8 @@ module.exports = {
           cutomwhite: '#FBFBFB',
           background: '#EBEBEB',
           tags: '#F5F5F5',
+          grad1: '#EDEDED',
+          grad2: '#F2F2F2',
         },
         dark: {
           secondary: '#4F4A45',
@@ -23,6 +25,9 @@ module.exports = {
           ceoclr: '#666666',
           p4: '#3D3D3D',
           arrow: '#525252',
+          offer: '#1F1F1F',
+          textoffer: '#B8B8B8',
+          textofferexplain: '#E0E0E0',
         },
         gray: {
           200: '#E4E4E7',
@@ -149,10 +154,14 @@ module.exports = {
         globe: '0px 1px 6px 15px rgba(25, 33, 61, 0.08)',
         industry: '3px 6px 6.7px 3px #00000040',
         logos: '8px 24px 48px 2px rgba(22, 23, 24, 0.05)',
+        offerimage: '0px 28px 100px -8px #000000',
       },
       backgroundImage: {
         industry:
           'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 91.36%)',
+        'custom-gradient2': 'linear-gradient(180deg, #F2F2F2 0%, #EDEDED 100%)',
+        'custom-gradient-b':
+          'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1))',
       },
       mixBlendMode: {
         luminosity: 'luminosity',
@@ -166,6 +175,9 @@ module.exports = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+      },
+      backdropBlur: {
+        '24': '24px',
       },
     },
   },
