@@ -23,7 +23,6 @@ export const AboutTagsValues = () => {
             src="/images/tagsvalues.jpg"
             alt="Office team"
             className="rounded-3xl shadow-lg"
-            layout="responsive"
             width={381}
             height={100}
           />

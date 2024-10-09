@@ -176,6 +176,9 @@ module.exports = {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
+      opacity: {
+        offer: '0.2668',
+      },
       backdropBlur: {
         '24': '24px',
       },

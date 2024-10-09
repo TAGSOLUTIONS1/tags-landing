@@ -8,7 +8,7 @@ interface AboutOfferProps {
 
 const AboutOffer = (props: AboutOfferProps) => {
   return (
-    <div className="flex md:pl-14">
+    <div className="flex md:pl-14 hover:opacity-100">
       <div className="mt-2">
         <CircleButton></CircleButton>
       </div>

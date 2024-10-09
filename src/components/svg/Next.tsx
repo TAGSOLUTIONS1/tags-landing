@@ -13,9 +13,9 @@ export const Next = () => {
         <path
           d="M10.03 18L16.03 12L10.03 6"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </>
