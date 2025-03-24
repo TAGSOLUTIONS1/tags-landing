@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             </div>
           </div>
           <div className="flex items-center h-[51px]">
-            <Link href={'/#about-us'}>
+            <Link href={'/contact-us'}>
               <div className="hidden lg:block">
                 <Button title="Contact Us" />
               </div>

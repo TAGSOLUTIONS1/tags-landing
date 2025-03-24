@@ -7,6 +7,7 @@ import AboutOffers from '@/components/shared/AboutOffers';
 import { AboutPartners } from '@/components/shared/AboutPartners';
 import AboutEmpoweringBusiness from '@/components/shared/AboutEmpoweringBusiness';
 import { AboutBusinessTransform } from '@/components/shared/AboutBusinessTransform';
+import { AboutTagsValues } from '@/components/shared/AboutTagsValues';
 
 const AboutUs = () => {
   return (
@@ -14,6 +15,7 @@ const AboutUs = () => {
       <AboutHeader />
       <AboutImageSection />
       <AboutMission />
+      <AboutTagsValues />
       <AboutOffers />
       <AboutPartners />
       <AboutEmpoweringBusiness />
