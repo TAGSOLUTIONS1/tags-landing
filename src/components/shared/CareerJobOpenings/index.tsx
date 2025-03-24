@@ -57,7 +57,7 @@ const CareerJobOpenings: React.FC = () => {
                 {job.categories.map((category, idx) => (
                   <span
                     key={idx}
-                    className="bg-orange-500 text-white text-xs rounded-full px-3 py-1"
+                    className="bg-orange-primary text-white text-xs rounded-full px-3 py-1"
                   >
                     {category}
                   </span>
@@ -70,6 +70,12 @@ const CareerJobOpenings: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex flex-col items-center mt-5">
+        <p className={'text-[#10101899] text-sm m-5'}>Showing 8 out 10 jobs</p>
+        <button className="bg-orange-primary text-white px-4 py-2 rounded-full">
+          Load more jobs
+        </button>
       </div>
     </div>
   );
