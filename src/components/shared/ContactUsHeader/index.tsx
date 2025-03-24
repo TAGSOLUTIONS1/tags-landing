@@ -8,6 +8,7 @@ const ContactUsHeader: React.FC = () => {
     <div
       className="relative flex flex-col items-center justify-center h-[500px] text-center bg-cover bg-center px-4 sm:px-6 md:px-8"
       style={{ backgroundImage: "url('/images/contactheader.jpeg')" }}
+      // never use style property in react use tailwind/css
     >
       <div className="absolute inset-0 bg-black bg-opacity-55"></div>
 
