@@ -3,6 +3,7 @@ import CareerContent from '@/components/shared/CareerContent';
 import CareerHeader from '@/components/shared/CareerHeader';
 import CareerJobOpenings from '@/components/shared/CareerJobOpenings';
 import CareerCardList from '@/components/shared/CareerCardList';
+import CareerSoundsGood from '@/components/shared/CareerSoundsGood';
 
 const Careers = () => {
   return (
@@ -12,6 +13,7 @@ const Careers = () => {
       <CareerCardList />
       <CareerCardBenefit />
       <CareerJobOpenings />
+      <CareerSoundsGood />
     </main>
   );
 };
