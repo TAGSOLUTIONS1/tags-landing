@@ -59,7 +59,7 @@ const About: React.FC<Aboutprops> = ({ id }) => {
             <ul className="list-disc pl-7 mt-2">
               <li>+97-1508620567</li>
               <li>+92-3125050567</li>
-              <li>contact@tags-ltd.com</li>
+              <li>contact@tagsolutionsltd.com</li>
             </ul>
           </div>
         </div>

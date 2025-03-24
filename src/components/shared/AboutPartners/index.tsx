@@ -17,7 +17,7 @@ export const AboutPartners = () => {
 
         <div className="grid grid-cols-1 gap-8">
           <TagsPartnerCard
-            title={'LOGO'}
+            title={'/logo/FindxStorage3.png'}
             description={
               'Our collaboration with FindXStorage ensures they have the advanced technology and secure infrastructure needed to offer top-tier storage solutions to their clients.'
             }
@@ -27,7 +27,7 @@ export const AboutPartners = () => {
 
         <div className="grid grid-cols-1 gap-8 ">
           <TagsPartnerCard
-            title={'LOGO'}
+            title={'/logo/has_logo.png'}
             description={
               'We support Have A Seat with tailored tech solutions that streamline their operations and enhance the efficiency of their overall company.'
             }
