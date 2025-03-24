@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Paragraph from '@/components/ui/Paragraph';
+import Link from 'next/link';
 const CareerSoundsGood = () => {
   return (
     <div className="p-6 flex flex-col justify-center items-center bg-black">
@@ -20,13 +21,15 @@ const CareerSoundsGood = () => {
         />
       </div>
       <div className="flex space-x-5 mt-6 mb-16">
-        <button className="p-4 w-[150px] rounded-full border border-white text-sm text-white">
+        <button className="p-4 w-[150px] rounded-full border border-white text-sm text-white transition-transform duration-300 hover:scale-105">
           How we hire
         </button>
-        <button className="p-4 w-[150px] rounded-full border border-white text-sm text-white">
+        <Link
+          href="/contact-us"
+          className="p-4 w-[150px] rounded-full border flex justify-center border-white text-sm text-white transition-transform duration-300 hover:scale-105"
+        >
           Contact us
-        </button>
-
+        </Link>
       </div>
     </div>
   );
