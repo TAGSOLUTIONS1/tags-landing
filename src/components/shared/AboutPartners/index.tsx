@@ -29,7 +29,7 @@ export const AboutPartners = () => {
 
         <div className="grid grid-cols-1 gap-8 ">
           <TagsPartnerCard
-            title={'/logo/has_logo.png'}
+            title={'/logo/haslogo.png'}
             width={100}
             height={100}
             description={
