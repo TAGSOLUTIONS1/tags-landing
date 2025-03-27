@@ -21,7 +21,6 @@ export const TagsPartnerCard = (props: TagsPartnerValues) => {
           width={props.width}
           height={props.height}
         />
-
         <p className="text-dark-ceoclr text-sm md:text-base font-normal">
           {props.description}
         </p>
