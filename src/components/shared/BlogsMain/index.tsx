@@ -1,31 +1,31 @@
 import Image from 'next/image';
 const BlogsMain = () => {
-  const blogs = [
-    {
-      category: 'CAREER DEVELOPMENT',
-      title: 'Unlocking Career Growth in Tech',
-    },
-    {
-      category: 'INNOVATION',
-      title: 'From Idea to Impact: Exploring the Critical Role of UI/UX',
-    },
-    {
-      category: 'ENTREPRENEURSHIP',
-      title: 'Entrepreneurship in Tech',
-    },
-    {
-      category: 'COLLABORATION',
-      title: 'Building Custom Solutions',
-    },
-    {
-      category: 'WORK-LIFE BALANCE',
-      title: 'Work-Life Balance in the Tech Industry: Our Approach',
-    },
-    {
-      category: 'COMPANY CULTURE',
-      title: "Life at Tags: What It's Like to Be Part of Our Dynamic Team",
-    },
-  ];
+  // const blogs = [
+  //   {
+  //     category: 'CAREER DEVELOPMENT',
+  //     title: 'Unlocking Career Growth in Tech',
+  //   },
+  //   {
+  //     category: 'INNOVATION',
+  //     title: 'From Idea to Impact: Exploring the Critical Role of UI/UX',
+  //   },
+  //   {
+  //     category: 'ENTREPRENEURSHIP',
+  //     title: 'Entrepreneurship in Tech',
+  //   },
+  //   {
+  //     category: 'COLLABORATION',
+  //     title: 'Building Custom Solutions',
+  //   },
+  //   {
+  //     category: 'WORK-LIFE BALANCE',
+  //     title: 'Work-Life Balance in the Tech Industry: Our Approach',
+  //   },
+  //   {
+  //     category: 'COMPANY CULTURE',
+  //     title: "Life at Tags: What It's Like to Be Part of Our Dynamic Team",
+  //   },
+  // ];
   return (
     <div className="flex mt-8">
       <div className="m-4 flex flex-col gap-4">

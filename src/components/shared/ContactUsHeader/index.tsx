@@ -1,8 +1,7 @@
-// import Button from '@/components/ui/Button';
+import Button from '@/components/ui/Button';
 import Image from 'next/image';
 import React from 'react';
 import Paragraph from '@/components/ui/Paragraph';
-import Link from 'next/link';
 
 const ContactUsHeader: React.FC = () => {
   return (
@@ -26,7 +25,7 @@ const ContactUsHeader: React.FC = () => {
         </div>
 
         <h1 className="text-[30px] sm:text-[35px] md:text-[43px] text-white font-bold leading-tight">
-          Let's Build the Future of Your Business
+          Let&apos;s Build the Future of Your Business
         </h1>
 
         <Paragraph
@@ -34,14 +33,13 @@ const ContactUsHeader: React.FC = () => {
           color="white"
         />
 
-        <Link
-          href="#connectwithus"
-          className="bg-orange-primary text-white px-5 py-4 mt-4 rounded-lg hover:bg-orange-600"
-        >
-          Connect with us
-        </Link>
+        <Button
+          title="Connect with us"
+          // href="/#connectwithus"
+        />
       </div>
     </div>
   );
 };
+
 export default ContactUsHeader;
