@@ -31,6 +31,7 @@ module.exports = {
         },
         gray: {
           200: '#E4E4E7',
+          light: '#292929',
         },
         orange: {
           primary: '#E46625',
