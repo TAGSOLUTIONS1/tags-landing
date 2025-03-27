@@ -21,9 +21,14 @@ const CareerSoundsGood = () => {
         />
       </div>
       <div className="flex space-x-5 mt-6 mb-16">
-        <button className="p-4 w-[150px] rounded-full border border-white text-sm text-white transition-transform duration-300 hover:scale-105">
+        <Link
+          href="https://www.linkedin.com/company/tagsolutionsltd/posts/?feedView=all"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-4 w-[150px] rounded-full border flex justify-center border-white text-sm text-white transition-transform duration-300 hover:scale-105"
+        >
           How we hire
-        </button>
+        </Link>
         <Link
           href="/contact-us"
           className="p-4 w-[150px] rounded-full border flex justify-center border-white text-sm text-white transition-transform duration-300 hover:scale-105"

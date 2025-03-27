@@ -49,7 +49,7 @@ const About: React.FC<Aboutprops> = ({ id }) => {
           <div className="w-72 h-full flex flex-col justify-between lg:mt-28 text-dark-secondary">
             <p className="text-p1 font-h-bold">Address:</p>
             <ul className="list-disc pl-7 mt-2">
-              <li>Dubai Silicon Oasis</li>
+              <li>Dubai Silicon Oasis, UAE</li>
               <li>Lahore, Punjab, Pakistan</li>
             </ul>
 

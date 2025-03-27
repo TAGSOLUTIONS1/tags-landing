@@ -37,12 +37,7 @@ const CareerJobOpenings: React.FC = () => {
   return (
     <div className="p-6 flex flex-col justify-center items-center mt-4">
       <div className="mb-4">
-        <Paragraph
-          title={
-            'Open Jobs in all locations in all categories in all job types'
-          }
-          color={'[#4F4A45]'}
-        />
+        <Paragraph title={'Job Openings'} color={'[#4F4A45]'} />
       </div>
 
       <div className="flex flex-col space-y-4 w-full max-w-[950px]">
@@ -72,10 +67,15 @@ const CareerJobOpenings: React.FC = () => {
         ))}
       </div>
       <div className="flex flex-col items-center mt-5">
-        <p className={'text-[#10101899] text-sm m-5'}>Showing 8 out 10 jobs</p>
-        <button className="bg-orange-primary text-white px-4 py-2 rounded-full">
+        <p className={'text-[#10101899] text-sm m-5'}>
+          apply at{' '}
+          <span className="hover:text-black hover:underline">
+            hr@tagsolutionsltd.com
+          </span>
+        </p>
+        {/* <button className="bg-orange-primary text-white px-4 py-2 rounded-full">
           Load more jobs
-        </button>
+        </button> */}
       </div>
     </div>
   );

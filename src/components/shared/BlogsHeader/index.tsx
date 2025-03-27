@@ -4,7 +4,9 @@ const BlogsHeader = () => {
   return (
     <div className="flex justify-between items-center p-4">
       <div className="w-full p-4">
-        <p className="text-orange-primary m-3 font-semibold text-md">OUR BLOGS</p>
+        <p className="text-orange-primary m-3 font-semibold text-md">
+          OUR BLOGS
+        </p>
         <div className="w-[300px] m-3 ">
           <h1 className="font-bold text-[40px] leading-tight">
             Insights on Custom Tech Solutions
@@ -26,7 +28,7 @@ const BlogsHeader = () => {
         </button>
       </div>
       {/* right side blog card here  */}
-      <div className="w-full p-4 mt-3">
+      <div className="w-full p-4 mt-3 ml-[150px]">
         <div className="bg-white w-[500px] h-[320px] rounded-[15px] shadow-lg m-6 flex flex-col items-center justify-center">
           <div className="m-2 mt-[-25px] drop-shadow-lg py-2">
             <Image
