@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Heading from '@/components/ui/Heading';
+// import Heading from '@/components/ui/Heading';
 const BlogsMain = () => {
   const blogs = [
     {
@@ -47,7 +47,7 @@ const BlogsMain = () => {
     <div className="flex flex-col md:flex-row mt-8 px-4 md:px-10">
       {/* Left Side - Main Blog Post */}
       <div className="flex flex-col gap-4 w-full md:w-2/3">
-        <div className="w-full max-w-[650px] h-auto rounded-[35px] mx-auto">
+        <div className="w-full max-w-[650px] h-auto rounded-[35px]">
           <Image
             className="rounded-[35px] w-full"
             src="/images/blog2.jpeg"
@@ -56,7 +56,7 @@ const BlogsMain = () => {
             height={300}
           />
         </div>
-        <div className="w-full max-w-[550px] mx-auto mt-6 md:mt-[50px]">
+        <div className="w-full max-w-[550px] mt-6 md:mt-[50px]">
           <p className="text-orange-case text-sm font-semibold">
             COLLABORATION
           </p>
@@ -73,14 +73,14 @@ const BlogsMain = () => {
       </div>
 
       {/* Right Side - Recent Articles */}
-      <div className="flex flex-col gap-4 mt-8 md:mt-0 w-full md:w-1/3 mx-auto md:ml-10">
-        <p className="font-semibold text-lg text-center md:text-left">
+      <div className="flex flex-col gap-4 mt-8 md:mt-0 w-full md:w-1/3 md:ml-10">
+        <p className="font-semibold text-lg text-center md:text-left lg:ml-[-150px]">
           Recent Articles
         </p>
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row gap-4 items-center md:items-start"
+            className="flex flex-col md:flex-row gap-4 items-center md:items-start lg:ml-[-150px]"
           >
             <div className="w-full max-w-[200px]">
               <Image
