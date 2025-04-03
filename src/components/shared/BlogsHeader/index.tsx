@@ -8,7 +8,7 @@ const BlogsHeader = () => {
           OUR BLOGS
         </p>
         <div className="w-[300px] m-3 ">
-          <h1 className="font-bold text-[40px] leading-tight">
+          <h1 className="font-bold text-[45px] leading-tight">
             Insights on Custom Tech Solutions
           </h1>
         </div>
@@ -29,12 +29,12 @@ const BlogsHeader = () => {
       </div>
       {/* right side blog card here  */}
       <div className="w-full p-4 mt-3 ml-[150px]">
-        <div className="bg-white w-[500px] h-[320px] rounded-[15px] shadow-lg m-6 flex flex-col items-center justify-center">
+        <div className="bg-white w-[550px] h-[320px] rounded-[15px] shadow-lg m-6 flex flex-col items-center justify-center">
           <div className="m-2 mt-[-25px] drop-shadow-lg py-2">
             <Image
               src="/images/blog1.jpeg"
               alt="description"
-              className="h-[250px] w-[500px] rounded-[15px]"
+              className="h-[250px] w-[550px] rounded-[15px]"
               height={200}
               width={300}
             />

@@ -20,7 +20,8 @@ const Navbar: React.FC = () => {
 
             <div className="hidden lg:flex">
               <Navbutton title="Home" href="/" />
-              <Navbutton title="Services" href="/#services" />
+              {/* <Navbutton title="Services" href="/#services" /> */}
+              <Navbutton title="Services" href="/blogs" />
               <Navbutton title="Careers" href="/careers" />
               <Navbutton title="Case Studies" href="/case-studies" />
               <Navbutton title="Industries" href="/#industries" />
