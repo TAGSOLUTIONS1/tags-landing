@@ -44,52 +44,59 @@ const BlogsMain = () => {
     },
   ];
   return (
-    <div className="flex mt-8">
-      <div className="m-4 flex flex-col gap-4">
-        <div className="m-6 w-[650px] h-[300px] rounded-full">
+    <div className="flex flex-col md:flex-row mt-8 px-4 md:px-10">
+      {/* Left Side - Main Blog Post */}
+      <div className="flex flex-col gap-4 w-full md:w-2/3">
+        <div className="w-full max-w-[650px] h-auto rounded-[35px] mx-auto">
           <Image
-            className="rounded-[35px]"
+            className="rounded-[35px] w-full"
             src="/images/blog2.jpeg"
             alt="Blog Image"
             width={650}
             height={300}
           />
         </div>
-        <div className="w-[550px] m-6 mt-[130px]">
+        <div className="w-full max-w-[550px] mx-auto mt-6 md:mt-[50px]">
           <p className="text-orange-case text-sm font-semibold">
             COLLABORATION
           </p>
-          <Heading
-            title={'The Power of Collaboration in Custom Tech Solutions'}
-            color={'black'}
-          />
-          <p className="text-[#17191D] text-md">
+          <h2 className="text-black text-lg md:text-2xl font-bold">
+            The Power of Collaboration in Custom Tech Solutions
+          </h2>
+          <p className="text-[#17191D] text-md mt-2">
             Discover how teamwork and collaboration fuel innovation at Tags,
             empowering our teams to overcome challenges and deliver
             groundbreaking, custom tech solutions.
           </p>
-          <p className="text-[#9FA1A7] text-sm mt-3">By TAGS Team </p>
+          <p className="text-[#9FA1A7] text-sm mt-3">By TAGS Team</p>
         </div>
       </div>
-      <div className="flex flex-col gap-4 m-6">
-        <p className="font-semibold">Recent Articles</p>
+
+      {/* Right Side - Recent Articles */}
+      <div className="flex flex-col gap-4 mt-8 md:mt-0 w-full md:w-1/3 mx-auto md:ml-10">
+        <p className="font-semibold text-lg text-center md:text-left">
+          Recent Articles
+        </p>
         {blogs.map((blog, index) => (
-          <div key={index} className="flex gap-5">
-            <div>
+          <div
+            key={index}
+            className="flex flex-col md:flex-row gap-4 items-center md:items-start"
+          >
+            <div className="w-full max-w-[200px]">
               <Image
-                className="w-[200px] h-[130px] object-cover rounded-[15px]"
+                className="w-full h-auto md:h-[130px] object-cover rounded-[15px]"
                 src={blog.image}
                 alt="Blog Image"
                 width={200}
                 height={130}
               />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-center md:text-left">
               <p className="text-orange-case text-sm font-semibold">
                 {blog.category}
               </p>
-              <p>{blog.title}</p>
-              <p className="text-[#9FA1A7] text-sm mt-2">By TAGS Team </p>
+              <p className="text-md">{blog.title}</p>
+              <p className="text-[#9FA1A7] text-sm mt-2">By TAGS Team</p>
             </div>
           </div>
         ))}
@@ -97,4 +104,5 @@ const BlogsMain = () => {
     </div>
   );
 };
+
 export default BlogsMain;

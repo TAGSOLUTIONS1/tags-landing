@@ -1,22 +1,76 @@
+// import Image from 'next/image';
+
+// const BlogsHeader = () => {
+//   return (
+//     <div className="flex justify-between items-center p-4">
+//       <div className="w-full p-4">
+//         <p className="text-orange-primary m-3 font-semibold text-md">
+//           OUR BLOGS
+//         </p>
+//         <div className="w-[300px] m-3 ">
+//           <h1 className="font-bold text-[45px] leading-tight">
+//             Insights on Custom Tech Solutions
+//           </h1>
+//         </div>
+//         <p className="m-3 text-sm w-[400px]">
+//           Welcome to the TAGS blog, where we explore the latest trends, tips,
+//           and innovations in technology
+//         </p>
+//         <button className="justify-start rounded-[10px] w-1/4 bg-orange-case p-3 m-3 text-white text-sm flex items-center hover:bg-orange-primary hover:cursor-pointer">
+//           Contact us
+//           <Image
+//             src="/icons/warrow.png"
+//             alt="arrow-icon"
+//             className="ml-4 h-[10px] w-[6px]"
+//             height={10}
+//             width={15}
+//           />
+//         </button>
+//       </div>
+//       {/* right side blog card here  */}
+//       <div className="w-full p-4 mt-3 ml-[150px]">
+//         <div className="bg-white w-[550px] h-[320px] rounded-[15px] shadow-lg m-6 flex flex-col items-center justify-center">
+//           <div className="m-2 mt-[-25px] drop-shadow-lg py-2">
+//             <Image
+//               src="/images/blog1.jpeg"
+//               alt="description"
+//               className="h-[250px] w-[550px] rounded-[15px]"
+//               height={200}
+//               width={300}
+//             />
+//           </div>
+//           <div className="flex space-x-[100px]">
+//             <p className="text-md">Life at Tags: What It’s Like to Be Part?</p>
+//             <p className="text-sm underline text-orange-case">Learn more</p>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default BlogsHeader;
+
 import Image from 'next/image';
 
 const BlogsHeader = () => {
   return (
-    <div className="flex justify-between items-center p-4">
-      <div className="w-full p-4">
+    <div className="flex flex-col md:flex-row justify-between items-center p-4">
+      {/* Left Section */}
+      <div className="w-full md:w-1/2 p-4">
         <p className="text-orange-primary m-3 font-semibold text-md">
           OUR BLOGS
         </p>
-        <div className="w-[300px] m-3 ">
-          <h1 className="font-bold text-[45px] leading-tight">
+        <div className="max-w-[300px] m-3">
+          <h1 className="font-bold text-[35px] md:text-[45px] leading-tight">
             Insights on Custom Tech Solutions
           </h1>
         </div>
-        <p className="m-3 text-sm w-[400px]">
+        <p className="m-3 text-sm max-w-[400px]">
           Welcome to the TAGS blog, where we explore the latest trends, tips,
-          and innovations in technology
+          and innovations in technology.
         </p>
-        <button className="justify-start rounded-[10px] w-1/4 bg-orange-case p-3 m-3 text-white text-sm flex items-center hover:bg-orange-primary hover:cursor-pointer">
+        <button className="flex items-center justify-center md:justify-start rounded-[10px] w-3/4 md:w-1/4 bg-orange-case p-3 m-3 text-white text-sm hover:bg-orange-primary hover:cursor-pointer">
           Contact us
           <Image
             src="/icons/warrow.png"
@@ -27,21 +81,26 @@ const BlogsHeader = () => {
           />
         </button>
       </div>
-      {/* right side blog card here  */}
-      <div className="w-full p-4 mt-3 ml-[150px]">
-        <div className="bg-white w-[550px] h-[320px] rounded-[15px] shadow-lg m-6 flex flex-col items-center justify-center">
-          <div className="m-2 mt-[-25px] drop-shadow-lg py-2">
+
+      {/* Right Section (Blog Card) */}
+      <div className="w-full md:w-1/2 p-4 mt-3 md:mt-0 md:ml-6 flex justify-center">
+        <div className="bg-white w-full max-w-[550px] h-auto md:h-[320px] rounded-[15px] shadow-lg flex flex-col items-center justify-center">
+          <div className="m-2 drop-shadow-lg py-2">
             <Image
               src="/images/blog1.jpeg"
               alt="description"
-              className="h-[250px] w-[550px] rounded-[15px]"
+              className="rounded-[15px] w-full max-w-[550px] h-auto md:h-[250px]"
               height={200}
               width={300}
             />
           </div>
-          <div className="flex space-x-[100px]">
-            <p className="text-md">Life at Tags: What It’s Like to Be Part?</p>
-            <p className="text-sm underline text-orange-case">Learn more</p>
+          <div className="flex flex-col md:flex-row items-center justify-between w-full px-4 space-y-2 md:space-y-0 md:space-x-[20px]">
+            <p className="text-md text-center md:text-left">
+              Life at Tags: What It’s Like to Be Part?
+            </p>
+            <p className="text-sm underline text-orange-case hover:cursor-pointer">
+              Learn more
+            </p>
           </div>
         </div>
       </div>
