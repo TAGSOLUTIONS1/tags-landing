@@ -17,13 +17,14 @@ export const AboutPartners = () => {
 
         <div className="grid grid-cols-1 gap-8">
           <TagsPartnerCard
-            title={'/logo/FindxStorage3.png'}
-            width={250}
-            height={250}
+            title={'/logo/blufindx.png'}
+            width={130}
+            height={130}
             description={
               'Our collaboration with FindXStorage ensures they have the advanced technology and secure infrastructure needed to offer top-tier storage solutions to their clients.'
             }
             button="Learn More"
+            href="https://www.findxstorage.com"
           />
         </div>
 
@@ -36,6 +37,7 @@ export const AboutPartners = () => {
               'We support Have A Seat with tailored tech solutions that streamline their operations and enhance the efficiency of their overall company.'
             }
             button="Learn More"
+            href="https://www.haveaseat.com"
           />
         </div>
       </div>
