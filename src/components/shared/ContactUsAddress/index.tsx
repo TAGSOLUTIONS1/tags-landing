@@ -8,7 +8,7 @@ const ContactUsAddress: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="rounded-[15px] drop-shadow-lg w-full">
             <h1 className="p-3 text-center font-semibold hover:text-orange-case">
-              UAE Branch
+              UAE Office
             </h1>
             <iframe
               className="rounded-[15px] drop-shadow-lg m-3 w-full md:w-[520px] h-[300px] md:h-[500px]"
@@ -18,7 +18,7 @@ const ContactUsAddress: React.FC = () => {
           </div>
           <div className="rounded-[15px] drop-shadow-lg w-full">
             <h1 className="p-3 text-center font-semibold hover:text-orange-case">
-              Pakistan Branch
+              Pakistan Office
             </h1>
             <iframe
               className="rounded-[15px] drop-shadow-lg m-3 w-full md:w-[520px] h-[300px] md:h-[500px]"

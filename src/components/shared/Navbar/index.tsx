@@ -20,11 +20,12 @@ const Navbar: React.FC = () => {
 
             <div className="hidden lg:flex">
               <Navbutton title="Home" href="/" />
-              {/* <Navbutton title="Services" href="/#services" /> */}
-              <Navbutton title="Services" href="/blogs" />
-              <Navbutton title="Careers" href="/careers" />
-              <Navbutton title="Case Studies" href="/case-studies" />
               <Navbutton title="Industries" href="/#industries" />
+              <Navbutton title="Case Studies" href="/case-studies" />
+              {/* <Navbutton title="Services" href="/#services" /> */}
+              <Navbutton title="Blogs" href="/blogs" />
+              <Navbutton title="Careers" href="/careers" />
+              <Navbutton title="About Us" href="/about-us" />
               {/* <div className="flex items-center">
                 <Navbutton title="Resources" href="/#resources" />
                 <svg
@@ -43,7 +44,6 @@ const Navbar: React.FC = () => {
                   />
                 </svg>
               </div> */}
-              <Navbutton title="About Us" href="/about-us" />
             </div>
           </div>
           <div className="flex items-center h-[51px]">
