@@ -173,7 +173,7 @@
 import Paragraph from '@/components/ui/Paragraph';
 import Heading from '../../ui/Heading';
 import React, { useState } from 'react';
-import Button from '@/components/ui/Button';
+import FormButton from '@/components/ui/FormButton';
 import emojiFlags from 'emoji-flags';
 
 interface CountryCode {
@@ -366,7 +366,7 @@ const ContactUsForm: React.FC = () => {
 
           {/* Submit Button */}
           <div className="flex flex-col md:flex-row items-center">
-            <Button
+            <FormButton
               title={submitting ? 'Submitting...' : 'Submit'}
               disabled={submitting}
             />
