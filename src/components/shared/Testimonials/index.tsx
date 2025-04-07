@@ -101,10 +101,7 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
       <div className="mt-20">
         <div className="text-center">
           <Heading title="Voices of Success" color="orange-primary" />
-          <Heading
-            title="Real Feedback from our Partners"
-            color="dark-secondary"
-          />
+          <Heading title="Feedback from our Partners" color="dark-secondary" />
         </div>
 
         <div className="relative flex justify-center items-center mt-10">
