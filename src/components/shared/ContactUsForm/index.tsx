@@ -5,6 +5,8 @@ import Heading from '../../ui/Heading';
 import React, { useState } from 'react';
 import FormButton from '@/components/ui/FormButton';
 import emojiFlags from 'emoji-flags';
+// import PhoneInput from 'react-phone-input-2';
+// import 'react-phone-input-2/lib/style.css';
 
 interface CountryCode {
   code: string;
