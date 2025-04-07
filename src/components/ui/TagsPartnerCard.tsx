@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Linkbutton from './LinkButton';
 import Image from 'next/image';
 
 interface TagsPartnerValues {
@@ -8,6 +8,7 @@ interface TagsPartnerValues {
   button: string;
   width: number;
   height: number;
+  href: string;
 }
 
 export const TagsPartnerCard = (props: TagsPartnerValues) => {
@@ -26,7 +27,7 @@ export const TagsPartnerCard = (props: TagsPartnerValues) => {
         </p>
       </div>
       <div className="mt-3">
-        <Button title={props.button}></Button>
+        <Linkbutton title={props.button} href={props.href}></Linkbutton>
       </div>
     </div>
   );

@@ -11,25 +11,25 @@ const CareerJobOpenings: React.FC = () => {
     {
       title: 'Software Engineer',
       location: 'Lahore',
-      type: 'Permanent',
+      type: 'Full-time',
       categories: ['Development'],
     },
     {
       title: 'Content Writer',
       location: 'Lahore',
-      type: 'Permanent',
+      type: 'Full-time',
       categories: ['Content Creation', 'Digital Marketing'],
     },
     {
-      title: 'Customer Support Specialist',
-      location: 'Lahore',
-      type: 'Permanent',
+      title: 'Bussiness Development Executive',
+      location: 'Dubai',
+      type: 'Full-time',
       categories: ['Communication', 'Customer Experience'],
     },
     {
-      title: 'Data Scientist, Financial Data & Insights',
+      title: 'Associate Data Scientist',
       location: 'Lahore',
-      type: 'Permanent',
+      type: 'Full-time',
       categories: ['Reporting', 'Data Science'],
     },
   ];
