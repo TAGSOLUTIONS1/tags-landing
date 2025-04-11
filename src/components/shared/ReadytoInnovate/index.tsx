@@ -4,7 +4,7 @@ export const ReadytoInnovate = () => {
   return (
     <div className="bg-light-white w-full flex items-center justify-center py-10 h-[536px] mb-10">
       <div className="w-1/2 text-center space-y-8">
-        <p className="text-5xl font-bold">
+        <p className="lg:text-5xl md:text-4xl sm:text-3xl font-bold">
           Ready to Innovate? Let&apos;s Build the Future Together
         </p>
         <p>

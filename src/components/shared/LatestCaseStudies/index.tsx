@@ -48,7 +48,9 @@ const latestcasestudies = [
 export const LatestCaseStudies = () => {
   return (
     <div className="w-full px-10 sm:px-16 md:px-20 mt-8 mb-20">
-      <p className="text-5xl font-bold mb-10">Latest case studies</p>
+      <p className="lg:text-5xl md:text-3xl sm:text-xl font-bold mb-10 ">
+        Latest case studies
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {latestcasestudies.map((caseStudy, index) => (
           <div key={index} className="bg-white rounded-2xl shadow-lg">
@@ -102,11 +104,11 @@ export const LatestCaseStudies = () => {
           </div>
         ))}
       </div>
-      <div className="text-center mt-16">
+      {/* <div className="text-center mt-16">
         <button className="bg-transparent border-2 border-dark-secondary text-dark-secondary text-lg font-semibold px-6 py-3 rounded-xl">
           Load More
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
