@@ -1,7 +1,7 @@
 'use client';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import React, { useState, useEffect } from 'react';
-import Heading from '@/components/ui/Heading';
+// import Heading from '@/components/ui/Heading';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
@@ -100,14 +100,29 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
     <section id={id}>
       <div className="mt-20">
         <div className="text-center">
-          <Heading title="Voices of Success" color="orange-primary" />
-          <Heading title="Feedback from our Partners" color="dark-secondary" />
+          <h1
+            className={
+              'lg:text-Heading md:text-[29px] text-orange-primary font-bold sm:text-[20px]'
+            }
+          >
+            {' '}
+            Voices of Success
+          </h1>
+          <h1
+            className={
+              'lg:text-Heading md:text-[29px] text-dark-secondary font-bold sm:text-[20px]'
+            }
+          >
+            {' '}
+            Feedback from our Partners
+          </h1>
+          {/* <Heading title="Voices of Success" color="orange-primary" /> */}
+          {/* <Heading title="Feedback from our Partners" color="dark-secondary" /> */}
         </div>
-
         <div className="relative flex justify-center items-center mt-10">
           <button
             onClick={handlePrevClick}
-            className={`absolute left-3 top-1/2 transform -translate-y-1/2 text-black w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md z-10 ${isPrevDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`absolute left-3 sm:left-6 top-1/2 transform -translate-y-1/2 text-black w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md z-10 ${isPrevDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             <ChevronLeft />
           </button>
@@ -129,14 +144,14 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
               ))}
             </div>
           </div>
-
           <button
             onClick={handleNextClick}
-            className={`absolute right-24 top-1/2 transform -translate-y-1/2 text-black w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md z-10 ${isNextDisabled ? 'opacity-10' : ''}`}
+            className={`absolute right-3 sm:right-6 top-1/2 transform -translate-y-1/2 text-black w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md z-10 ${isNextDisabled ? 'opacity-10' : ''}`}
           >
             <ChevronRight />
           </button>
         </div>
+
         <div className="mt-8 flex justify-center space-x-2">
           {Array.from({ length: count }).map((_, index) => (
             <div

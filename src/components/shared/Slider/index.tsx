@@ -72,7 +72,7 @@ const Slider: React.FC<SliderProps> = ({ id }) => {
                     title={slide.description}
                   ></Paragraph>
                 </div>
-                <Link href={'/industry'}>
+                <Link className="hidden lg:flex" href={'/industry'}>
                   <div className="mt-5">
                     <Button title="Learn More"></Button>
                   </div>
