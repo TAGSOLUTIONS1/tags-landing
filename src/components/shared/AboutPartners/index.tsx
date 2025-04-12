@@ -28,7 +28,7 @@ export const AboutPartners = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-8 ">
+        <div className="grid grid-cols-1 gap-8">
           <TagsPartnerCard
             title={'/logo/haslogo.png'}
             width={100}

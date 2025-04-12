@@ -7,11 +7,11 @@ import { ReadytoInnovate } from '@/components/shared/ReadytoInnovate';
 const Casestudies = () => {
   return (
     <main className="overflow-x-hidden">
-      <CaseStudyTop></CaseStudyTop>
+      <CaseStudyTop />
       {/* <CaseStudyLogoRow></CaseStudyLogoRow> */}
-      <CaseStudyMain></CaseStudyMain>
-      <LatestCaseStudies></LatestCaseStudies>
-      <ReadytoInnovate></ReadytoInnovate>
+      <CaseStudyMain />
+      <LatestCaseStudies />
+      <ReadytoInnovate />
     </main>
   );
 };

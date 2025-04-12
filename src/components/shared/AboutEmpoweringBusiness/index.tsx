@@ -3,13 +3,13 @@ import React from 'react';
 
 const AboutEmpoweringBusiness: React.FC = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row md:p-14 lg:p-16 xl:p-20 gap-10 md:gap-20 justify-center">
+    <div className="w-full flex flex-col md:flex-row px-4 sm:px-6 md:px-14 lg:px-16 xl:px-20 py-10 md:py-14 lg:py-16 gap-8 md:gap-20 justify-center items-center">
       <div className="w-full md:w-1/2 flex justify-center items-center">
-        <div className="mx-auto space-y-3">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-orange-primary text-center md:text-left">
+        <div className="space-y-4 text-center md:text-left max-w-md sm:max-w-lg">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-orange-primary">
             Empowering Businesses with Innovative B2B Solutions
           </p>
-          <p className="text-dark-secondary text-sm md:text-base font-medium text-center md:text-left">
+          <p className="text-dark-secondary text-sm sm:text-base font-medium">
             As a competitive, certified company, Tags delivers excellence
             through custom solutions designed to meet your unique business
             needs.
@@ -17,63 +17,42 @@ const AboutEmpoweringBusiness: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 justify-center items-center">
-        <div className="grid grid-cols-3 gap-4 md:gap-6">
-          {/* <div className="flex justify-center items-center bg-custom-gradient2 border border-light-background p-4 md:p-6 rounded-3xl">
-            <Image
-              src="/logo/b2b1.png"
-              alt="Award 1"
-              className="w-full h-auto"
-              width={126}
-              height={128}
-            />
-          </div> */}
+      <div className="w-full md:w-1/2 flex justify-center">
+        <div className="grid grid-cols-2 gap-4 md:gap-6">
           <div className="flex justify-center items-center bg-custom-gradient2 border border-light-background p-4 md:p-6 rounded-3xl">
             <Image
               src="/logo/cloud.png"
-              alt="Award 2"
-              className="w-[90px] h-[70px]"
-              width={126}
-              height={128}
+              alt="Cloud"
+              width={90}
+              height={70}
+              className="w-[70px] sm:w-[90px] h-auto"
             />
           </div>
           <div className="flex justify-center items-center bg-custom-gradient2 border border-light-background p-4 md:p-6 rounded-3xl">
             <Image
               src="/logo/microsoft.png"
-              alt="Award 3"
-              className="w-full h-auto"
+              alt="Microsoft"
               width={126}
               height={128}
+              className="w-[70px] sm:w-[90px] h-auto"
             />
           </div>
-        </div>
-
-        <div className="grid grid-cols-3 gap-4 md:gap-6 mt-4 md:mt-6">
           <div className="flex justify-center items-center bg-custom-gradient2 border border-light-background p-4 md:p-6 rounded-3xl">
             <Image
               src="/logo/aws.png"
-              alt="Award 4"
-              className="w-[90px] h-[60px]"
-              width={126}
-              height={128}
+              alt="AWS"
+              width={90}
+              height={60}
+              className="w-[70px] sm:w-[90px] h-auto"
             />
           </div>
-          {/* <div className="flex justify-center items-center bg-custom-gradient2 border border-light-background p-4 md:p-6 rounded-3xl">
-            <Image
-              src="/logo/b2b5.png"
-              alt="Award 5"
-              className="w-full h-auto"
-              width={120}
-              height={128}
-            />
-          </div> */}
           <div className="flex justify-center items-center bg-custom-gradient2 border border-light-background p-4 md:p-6 rounded-3xl">
             <Image
               src="/logo/b2b6.png"
-              alt="Award 6"
-              className="w-full h-auto"
+              alt="B2B"
               width={126}
               height={128}
+              className="w-[70px] sm:w-[90px] h-auto"
             />
           </div>
         </div>

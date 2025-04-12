@@ -2,7 +2,7 @@ import CareerCard from '@/components/ui/CareerCard';
 
 const CareerCardList: React.FC = () => {
   return (
-    <div className="flex space-x-4 flex-wrap justify-center mt-10">
+    <div className="flex space-x-4 flex-wrap justify-center mt-10 space-y-3">
       <CareerCard
         imageSrc="/images/career1.jpeg"
         title="Growth Opportunities"
