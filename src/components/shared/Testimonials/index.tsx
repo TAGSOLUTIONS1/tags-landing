@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     name: 'Steven Davis',
-    description: `"TAGS turned my vision into a leading restaurant reservation platform. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future."`,
+    description: `"My vision into a leading restaurant reservation platform by Tags. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future."`,
     attribute: 'CEO at Have A Seat',
     image: '/images/steven.jpg',
   },
@@ -32,11 +32,30 @@ const testimonials = [
   },
   {
     name: 'Smith',
-    description: `"TAGS is a highly professional and efficient company, skilled in breaking down tasks and gathering precise requirements. Their focus on component-based development makes them ideal for projects with tight deadlines."`,
+    description: `"It is a highly professional and efficient company, skilled in breaking down tasks and gathering precise requirements. Their focus on component-based development makes them ideal for projects with tight deadlines."`,
     attribute: 'Upwork Client',
     image: '/images/testimonial4.png',
   },
-  // incase want to add more ;;
+  // here on extra are addded
+  {
+    name: 'Jason Wong',
+    description:
+      '"The custom analytics platform from Tags has given us powerful insights, driving better business decisions."',
+    attribute: 'CEO at Omnicharge',
+    image: '/images/testimonial2.jpg',
+  },
+  {
+    name: 'Smith',
+    description: `"It is a highly professional and efficient company, skilled in breaking down tasks and gathering precise requirements. Their focus on component-based development makes them ideal for projects with tight deadlines."`,
+    attribute: 'Upwork Client',
+    image: '/images/testimonial4.png',
+  },
+  {
+    name: 'Steven Davis',
+    description: `"My vision into a leading restaurant reservation platform by Tags. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future."`,
+    attribute: 'CEO at Have A Seat',
+    image: '/images/steven.jpg',
+  },
 ];
 
 interface TestimonialProps {
@@ -102,7 +121,7 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
         <div className="text-center">
           <h1
             className={
-              'lg:text-Heading md:text-[29px] text-orange-primary font-bold sm:text-[20px]'
+              'text-orange-primary text-[20px] sm:text-[25px] md:text-[30px] lg:text-Heading font-bold'
             }
           >
             {' '}
@@ -116,8 +135,6 @@ const Testimonials: React.FC<TestimonialProps> = ({ id }) => {
             {' '}
             Feedback from our Partners
           </h1>
-          {/* <Heading title="Voices of Success" color="orange-primary" /> */}
-          {/* <Heading title="Feedback from our Partners" color="dark-secondary" /> */}
         </div>
         <div className="relative flex justify-center items-center mt-10">
           <button

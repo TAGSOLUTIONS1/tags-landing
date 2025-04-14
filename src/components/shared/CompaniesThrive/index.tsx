@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Heading from '@/components/ui/Heading';
+// import Heading from '@/components/ui/Heading';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Paragraph from '@/components/ui/Paragraph';
 import Image from 'next/image';
@@ -83,11 +83,10 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
     <section id={id} className="container mx-auto px-4">
       <div className="mt-16 lg:mt-32">
         <div className="lg:ml-36 text-center lg:text-left">
-          <Heading
-            color={'black'}
-            title={'How Companies Thrive With Us'}
-          ></Heading>
-          <p className="text-p3 text-dark-ceoclr">
+          <h1 className="text-black text-[20px] sm:text-[25px] md:text-[30px] lg:text-Heading font-bold">
+            How Companies Thrive With Us
+          </h1>
+          <p className="lg:text-p3 md:text-p3 sm:text-p1 text-dark-ceoclr">
             Here’s how businesses succeeded after switching to our custom
             services.
           </p>
@@ -124,8 +123,8 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
                     key={index}
                     className={`flex-shrink-0 transition-transform duration-500 w-[30%] xl:w-[80%] lg:w-[65%] md:w-[45%] mr-10`}
                   >
-                    <div className="w-full flex flex-col lg:flex-row items-center justify-center bg-light-white rounded-2xl mx-2">
-                      <div className="lg:w-1/2 p-7">
+                    <div className="w-full flex flex-col lg:flex-row items-center justify-between bg-light-white rounded-2xl mx-2">
+                      <div className="w-full lg:w-1/2 p-9">
                         <div>
                           <Image
                             src="/logo/openai.png"
@@ -135,47 +134,47 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
                           />
                         </div>
                         <div className="hover:underline text-dark-ceoclr">
-                          <p className="text-hh4 lg:text-hh6 text-dark-p4 font-semibold mt-3 w-full">
+                          <p className="text-sm sm:text-base md:text-hh4 lg:text-hh6 text-dark-p4 font-semibold mt-3 w-full">
                             {slide.description}
                           </p>
                         </div>
-                        <div className="flex gap-12 mt-3">
+                        <div className="flex gap-8 mt-3 flex-wrap">
                           <div className="flex flex-col">
-                            <p className="text-h2 text-orange-primary font-bold">
+                            <p className="text-lg sm:text-xl md:text-h2 text-orange-primary font-bold">
                               40%
                             </p>
                             <Paragraph
                               color={'dark-ceoclr'}
                               title={'Boost in Click-Through Rates'}
-                            ></Paragraph>
+                            />
                           </div>
                           <div className="flex flex-col">
-                            <p className="text-h2 text-orange-primary font-bold">
+                            <p className="text-lg sm:text-xl md:text-h2 text-orange-primary font-bold">
                               60%
                             </p>
                             <Paragraph
                               color={'dark-ceoclr'}
                               title={'Increase in Conversions'}
-                            ></Paragraph>
+                            />
                           </div>
                         </div>
                         <Link href={'/case-studies'}>
                           <div className="font-semibold flex items-center space-x-3 mt-3">
-                            <ReadMoreIcon></ReadMoreIcon>
+                            <ReadMoreIcon />
                             <Paragraph
                               color={'dark-secondary'}
                               title={'Read the case study'}
-                            ></Paragraph>
+                            />
                           </div>
                         </Link>
                       </div>
-                      <div className="hidden lg:w-1/2 md:flex justify-end">
+                      <div className="w-full lg:w-1/2 md:flex justify-center mt-4 lg:mt-0 sm:hidden">
                         <Image
                           src={slide.image}
                           width={472}
                           height={429}
                           alt="thrive"
-                          className="w-[472px] h-[429px] border rounded-xl"
+                          className="w-full max-w-[300px] h-auto md:max-w-[400px] lg:max-w-[472px] border rounded-xl"
                         />
                       </div>
                     </div>

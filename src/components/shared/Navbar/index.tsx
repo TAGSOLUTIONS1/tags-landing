@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile Menu */}
         <div
           className={`
     fixed top-0 right-0 w-full h-full bg-white z-50 p-5 flex flex-col gap-4
@@ -60,8 +60,17 @@ const Navbar: React.FC = () => {
     ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
   `}
         >
-          {/* Close Button */}
-          <div className="flex justify-end">
+          <div className="flex justify-between items-center">
+            <Link href="/">
+              <Image
+                src="/logo/tagslogo.png"
+                alt="Logo"
+                // className=""
+                width={100}
+                height={200}
+              />
+            </Link>
+            {/* Close Button */}
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <HiOutlineX size={28} />
             </button>
