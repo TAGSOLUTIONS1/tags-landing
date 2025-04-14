@@ -7,13 +7,13 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const testimonials = [
   {
     name: 'Brandon Moore',
-    description: `"Tags brought FindxStorage to life with a seamless, user-friendly platform that sets us apart. Their AI expertise and industry knowledge have positioned us for success. Tags delivered not just a product, but our vision."`,
+    description: `"Tag Solutions brought FindxStorage to life with a seamless, user-friendly platform that sets us apart. Their AI expertise and industry knowledge have positioned us for success. Tags delivered not just a product, but our vision."`,
     attribute: 'CEO at FindxStorage',
     image: '/icons/maleicon.png',
   },
   {
     name: 'Steven Davis',
-    description: `"Tags turned my vision into a leading restaurant reservation platform. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future."`,
+    description: `"TAGS turned my vision into a leading restaurant reservation platform. Their AI expertise and innovation set us apart. Tags didn’t just deliver a project—they delivered our future."`,
     attribute: 'CEO at Have A Seat',
     image: '/images/steven.jpg',
   },
@@ -26,7 +26,7 @@ const testimonials = [
   },
   {
     name: 'Joe',
-    description: `"Tags' generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever."`,
+    description: `"Tag Solutions generative AI solutions have revolutionized our innovation process, allowing us to create value faster than ever."`,
     attribute: 'Client',
     image: '/images/testimonial1.png',
   },

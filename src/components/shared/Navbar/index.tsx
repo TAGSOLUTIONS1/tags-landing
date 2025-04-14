@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex gap-4 items-center">
             <Navbutton title="Home" href="/" />
-            <Navbutton title="Industries" href="/#industries" />
+            <Navbutton title="Industries" href="/industry" />
             <Navbutton title="Case Studies" href="/case-studies" />
             <Navbutton title="Blogs" href="/blogs" />
             <Navbutton title="Careers" href="/careers" />
