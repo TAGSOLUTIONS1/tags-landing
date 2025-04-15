@@ -47,10 +47,11 @@ const latestcasestudies = [
 
 export const LatestCaseStudies = () => {
   return (
-    <div className="w-full px-10 sm:px-16 md:px-20 mt-8 mb-20">
-      <p className="lg:text-5xl md:text-3xl sm:text-xl font-bold mb-10 ">
+    <div className="w-full px-5 sm:px-10 md:px-16 lg:px-20 mt-8 mb-20">
+      <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-10">
         Latest case studies
       </p>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {latestcasestudies.map((caseStudy, index) => (
           <div key={index} className="bg-white rounded-2xl shadow-lg">
@@ -60,11 +61,11 @@ export const LatestCaseStudies = () => {
                 alt={`Case Study ${index + 1}`}
                 width={638}
                 height={320}
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto rounded-2xl object-cover"
               />
             </div>
 
-            <div className="p-7 space-y-6">
+            <div className="p-5 sm:p-7 space-y-6">
               <div>
                 <Image
                   src="/logo/openai.png"
@@ -73,24 +74,24 @@ export const LatestCaseStudies = () => {
                   height={36}
                 />
               </div>
-              <p className="text-black text-2xl font-bold">
+              <p className="text-black text-lg sm:text-xl md:text-2xl font-bold">
                 {caseStudy.description}
               </p>
-              <div className="flex">
-                <div className="flex flex-col w-1/2 text-left">
-                  <p className="text-2xl font-bold text-orange-button mb-1">
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-0">
+                <div className="flex flex-col w-full sm:w-1/2 text-left">
+                  <p className="text-xl sm:text-2xl font-bold text-orange-button mb-1">
                     {caseStudy.figure1_value}
                   </p>
                   <Paragraph color={'dark-ceoclr'} title={caseStudy.figure1} />
                 </div>
-                <div className="flex flex-col w-1/2 text-left">
-                  <p className="text-2xl font-bold text-orange-button mb-1">
+                <div className="flex flex-col w-full sm:w-1/2 text-left">
+                  <p className="text-xl sm:text-2xl font-bold text-orange-button mb-1">
                     {caseStudy.figure2_value}
                   </p>
                   <Paragraph color={'dark-ceoclr'} title={caseStudy.figure2} />
                 </div>
               </div>
-              <div className="flex flex-wrap space-x-4 text-end">
+              <div className="flex flex-wrap gap-2">
                 {caseStudy.tags.map((tag, index2) => (
                   <p
                     key={index2}
@@ -104,11 +105,15 @@ export const LatestCaseStudies = () => {
           </div>
         ))}
       </div>
-      {/* <div className="text-center mt-16">
+
+      {/* Optional: load more button */}
+      {/* 
+      <div className="text-center mt-16">
         <button className="bg-transparent border-2 border-dark-secondary text-dark-secondary text-lg font-semibold px-6 py-3 rounded-xl">
           Load More
         </button>
-      </div> */}
+      </div> 
+      */}
     </div>
   );
 };
