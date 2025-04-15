@@ -78,8 +78,8 @@ const Slider: React.FC<SliderProps> = ({ id }) => {
                   </div>
                 </Link>
               </div>
-              <div className="lg:w-1/2 w-full flex justify-center ">
-                <div className="w-full h-[405px] overflow-hidden">
+              <div className="lg:w-1/2 w-full flex justify-center">
+                <div className="w-[250px] h-[200px] sm:w-[350px] sm:h-[300px] md:w-[450px] md:h-[350px] lg:w-full lg:h-[405px] overflow-hidden">
                   <Image
                     src={slide.image}
                     alt={slide.text}

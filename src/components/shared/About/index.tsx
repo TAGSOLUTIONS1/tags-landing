@@ -26,7 +26,7 @@ const About: React.FC<Aboutprops> = ({ id }) => {
           </div>
           <div className="w-98 h-[200px] flex flex-col justify-between lg:mt-28 text-dark-secondary">
             <p className="text-p1 font-h-bold">Company</p>
-            <Link href={'/#industries'}>
+            <Link href={'/industry'}>
               <p className="text-hh4 hover:text-orange-primary">Industries</p>
             </Link>
             <Link href={'/#services'}>
@@ -35,17 +35,18 @@ const About: React.FC<Aboutprops> = ({ id }) => {
             <Link href={'/#why-tags'}>
               <p className="text-hh4 hover:text-orange-primary">Testimonials</p>
             </Link>
-            <Link href={'/#case-studies'}>
+            <Link href={'/case-studies'}>
               <p className="text-hh4 hover:text-orange-primary">Case Studies</p>
             </Link>
           </div>
-          <div className="w-98 h-[200px] flex flex-col justify-between lg:mt-28">
+          <div className="hidden lg:flex w-98 h-[200px] flex-col justify-between mt-28">
             <p className="text-p1 font-h-bold text-dark-secondary">Help</p>
             <Paragraph title="Customer Support" color="dark-secondary" />
             <Paragraph title="Careers" color="dark-secondary" />
             <Paragraph title="Terms and Conditions" color="dark-secondary" />
             <Paragraph title="Privacy Policy" color="dark-secondary" />
           </div>
+
           <div className="w-72 h-full flex flex-col justify-between lg:mt-28 text-dark-secondary">
             <p className="text-p1 font-h-bold">Address:</p>
             <ul className="list-disc pl-7 mt-2">

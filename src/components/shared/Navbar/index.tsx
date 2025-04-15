@@ -6,6 +6,12 @@ import Button from '@/components/ui/Button';
 import Navbutton from '@/components/ui/Navbutton';
 import Link from 'next/link';
 import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
+import { RiHome2Line } from 'react-icons/ri';
+import { MdOutlineBusinessCenter } from 'react-icons/md';
+import { BsFileEarmarkBarGraph } from 'react-icons/bs';
+import { PiArticleMediumLight } from 'react-icons/pi';
+import { LuBriefcase } from 'react-icons/lu';
+import { IoIosPeople } from 'react-icons/io';
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,7 +36,7 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex gap-4 items-center">
             <Navbutton title="Home" href="/" />
-            <Navbutton title="Industries" href="/#industries" />
+            <Navbutton title="Industries" href="/industry" />
             <Navbutton title="Case Studies" href="/case-studies" />
             <Navbutton title="Blogs" href="/blogs" />
             <Navbutton title="Careers" href="/careers" />
@@ -52,7 +58,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile Menu */}
         <div
           className={`
     fixed top-0 right-0 w-full h-full bg-white z-50 p-5 flex flex-col gap-4
@@ -60,20 +66,50 @@ const Navbar: React.FC = () => {
     ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
   `}
         >
-          {/* Close Button */}
-          <div className="flex justify-end">
+          <div className="flex justify-between items-center">
+            <Link href="/">
+              <Image
+                src="/logo/tagslogo.png"
+                alt="Logo"
+                // className=""
+                width={100}
+                height={200}
+              />
+            </Link>
+            {/* Close Button */}
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <HiOutlineX size={28} />
             </button>
           </div>
 
+          <hr className="bg-dark-secondary w-3/4 ml-[35px] mt-[-10px] mb-[20px]" />
+
           {/* Mobile Nav Links */}
-          <Navbutton title="Home" href="/" />
-          <Navbutton title="Industries" href="/#industries" />
-          <Navbutton title="Case Studies" href="/case-studies" />
-          <Navbutton title="Blogs" href="/blogs" />
-          <Navbutton title="Careers" href="/careers" />
-          <Navbutton title="About Us" href="/about-us" />
+          <div className="flex hover:text-orange-primary">
+            <RiHome2Line className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
+            <Navbutton title="Home" href="/" />
+          </div>
+          <div className="flex hover:text-orange-primary">
+            <MdOutlineBusinessCenter className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
+            <Navbutton title="Industries" href="/industry" />
+          </div>
+          <div className="flex hover:text-orange-primary">
+            <BsFileEarmarkBarGraph className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
+            <Navbutton title="Case Studies" href="/case-studies" />
+          </div>
+          <div className="flex hover:text-orange-primary">
+            <PiArticleMediumLight className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
+            <Navbutton title="Blogs" href="/blogs" />
+          </div>
+          <div className="flex hover:text-orange-primary">
+            <LuBriefcase className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
+            <Navbutton title="Careers" href="/careers" />
+          </div>
+          <div className="flex hover:text-orange-primary">
+            <IoIosPeople className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
+            <Navbutton title="About Us" href="/about-us" />
+          </div>
+
           <Link href="/contact-us">
             <Button title="Contact Us" />
           </Link>

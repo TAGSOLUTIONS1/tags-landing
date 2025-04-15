@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Heading from '@/components/ui/Heading';
+// import Heading from '@/components/ui/Heading';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Paragraph from '@/components/ui/Paragraph';
 import Image from 'next/image';
@@ -83,11 +83,10 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
     <section id={id} className="container mx-auto px-4">
       <div className="mt-16 lg:mt-32">
         <div className="lg:ml-36 text-center lg:text-left">
-          <Heading
-            color={'black'}
-            title={'How Companies Thrive With Us'}
-          ></Heading>
-          <p className="text-p3 text-dark-ceoclr">
+          <h1 className="text-black text-[20px] sm:text-[25px] md:text-[30px] lg:text-Heading font-bold">
+            How Companies Thrive With Us
+          </h1>
+          <p className="lg:text-p3 md:text-p3 sm:text-p1 text-dark-ceoclr">
             Here’s how businesses succeeded after switching to our custom
             services.
           </p>
@@ -114,7 +113,7 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
             </div>
             <div className="flex overflow-hidden relative">
               <div
-                className="flex transition-transform duration-500"
+                className="flex transition-transform duration-300"
                 style={{
                   transform: `translateX(-${currentIndex * translateValue}%)`,
                 }}
@@ -122,7 +121,9 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
                 {slides.map((slide, index) => (
                   <div
                     key={index}
-                    className={`flex-shrink-0 transition-transform duration-500 w-[30%] xl:w-[80%] lg:w-[65%] md:w-[45%] mr-10`}
+                    className={
+                      'flex-shrink-0 transition-transform duration-500 w-[23%] xl:w-[80%] lg:w-[65%] md:w-[45%] sm:w-[35%] mr-10'
+                    }
                   >
                     <div className="w-full flex flex-col lg:flex-row items-center justify-center bg-light-white rounded-2xl mx-2">
                       <div className="lg:w-1/2 p-7">
