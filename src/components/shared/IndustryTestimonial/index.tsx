@@ -73,7 +73,7 @@ const IndustryTestimonial = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-between p-5 md:p-10 mt-10">
-        <p className="text-hh7 md:text-hh10 lg:text-hh11 font-bold max-w-[580px]">
+        <p className="text-hh6 m-2 md:text-hh10 lg:text-hh11 font-bold max-w-[580px]">
           What our clients say about our services
         </p>
         <div className="flex justify-center md:justify-end">

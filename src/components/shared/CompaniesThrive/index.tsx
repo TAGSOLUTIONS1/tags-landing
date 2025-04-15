@@ -113,7 +113,7 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
             </div>
             <div className="flex overflow-hidden relative">
               <div
-                className="flex transition-transform duration-500"
+                className="flex transition-transform duration-300"
                 style={{
                   transform: `translateX(-${currentIndex * translateValue}%)`,
                 }}
@@ -121,10 +121,12 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
                 {slides.map((slide, index) => (
                   <div
                     key={index}
-                    className={`flex-shrink-0 transition-transform duration-500 w-[30%] xl:w-[80%] lg:w-[65%] md:w-[45%] mr-10`}
+                    className={
+                      'flex-shrink-0 transition-transform duration-500 w-[23%] xl:w-[80%] lg:w-[65%] md:w-[45%] sm:w-[35%] mr-10'
+                    }
                   >
-                    <div className="w-full flex flex-col lg:flex-row items-center justify-between bg-light-white rounded-2xl mx-2">
-                      <div className="w-full lg:w-1/2 p-9">
+                    <div className="w-full flex flex-col lg:flex-row items-center justify-center bg-light-white rounded-2xl mx-2">
+                      <div className="lg:w-1/2 p-7">
                         <div>
                           <Image
                             src="/logo/openai.png"
@@ -134,47 +136,47 @@ const CompaniesThrive: React.FC<CompaniesProps> = ({ id }) => {
                           />
                         </div>
                         <div className="hover:underline text-dark-ceoclr">
-                          <p className="text-sm sm:text-base md:text-hh4 lg:text-hh6 text-dark-p4 font-semibold mt-3 w-full">
+                          <p className="text-hh4 lg:text-hh6 text-dark-p4 font-semibold mt-3 w-full">
                             {slide.description}
                           </p>
                         </div>
-                        <div className="flex gap-8 mt-3 flex-wrap">
+                        <div className="flex gap-12 mt-3">
                           <div className="flex flex-col">
-                            <p className="text-lg sm:text-xl md:text-h2 text-orange-primary font-bold">
+                            <p className="text-h2 text-orange-primary font-bold">
                               40%
                             </p>
                             <Paragraph
                               color={'dark-ceoclr'}
                               title={'Boost in Click-Through Rates'}
-                            />
+                            ></Paragraph>
                           </div>
                           <div className="flex flex-col">
-                            <p className="text-lg sm:text-xl md:text-h2 text-orange-primary font-bold">
+                            <p className="text-h2 text-orange-primary font-bold">
                               60%
                             </p>
                             <Paragraph
                               color={'dark-ceoclr'}
                               title={'Increase in Conversions'}
-                            />
+                            ></Paragraph>
                           </div>
                         </div>
                         <Link href={'/case-studies'}>
                           <div className="font-semibold flex items-center space-x-3 mt-3">
-                            <ReadMoreIcon />
+                            <ReadMoreIcon></ReadMoreIcon>
                             <Paragraph
                               color={'dark-secondary'}
                               title={'Read the case study'}
-                            />
+                            ></Paragraph>
                           </div>
                         </Link>
                       </div>
-                      <div className="w-full lg:w-1/2 md:flex justify-center mt-4 lg:mt-0 sm:hidden">
+                      <div className="hidden lg:w-1/2 md:flex justify-end">
                         <Image
                           src={slide.image}
                           width={472}
                           height={429}
                           alt="thrive"
-                          className="w-full max-w-[300px] h-auto md:max-w-[400px] lg:max-w-[472px] border rounded-xl"
+                          className="w-[472px] h-[429px] border rounded-xl"
                         />
                       </div>
                     </div>

@@ -85,27 +85,27 @@ const Navbar: React.FC = () => {
           <hr className="bg-dark-secondary w-3/4 ml-[35px] mt-[-10px] mb-[20px]" />
 
           {/* Mobile Nav Links */}
-          <div className="flex">
+          <div className="flex hover:text-orange-primary">
             <RiHome2Line className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
             <Navbutton title="Home" href="/" />
           </div>
-          <div className="flex">
+          <div className="flex hover:text-orange-primary">
             <MdOutlineBusinessCenter className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
             <Navbutton title="Industries" href="/industry" />
           </div>
-          <div className="flex">
+          <div className="flex hover:text-orange-primary">
             <BsFileEarmarkBarGraph className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
             <Navbutton title="Case Studies" href="/case-studies" />
           </div>
-          <div className="flex">
+          <div className="flex hover:text-orange-primary">
             <PiArticleMediumLight className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
             <Navbutton title="Blogs" href="/blogs" />
           </div>
-          <div className="flex">
+          <div className="flex hover:text-orange-primary">
             <LuBriefcase className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
             <Navbutton title="Careers" href="/careers" />
           </div>
-          <div className="flex">
+          <div className="flex hover:text-orange-primary">
             <IoIosPeople className="ml-3 mt-[18px] h-[22px] w-[22px] text-dark-secondary hover:text-orange-primary" />
             <Navbutton title="About Us" href="/about-us" />
           </div>
