@@ -72,7 +72,9 @@ const ContactUsForm: React.FC = () => {
       {/* Left section with contact details */}
       <div className="flex flex-col ml-4 md:ml-[30px]">
         <div className="p-4 md:p-6">
-          <Heading title="Connect With Us" color="Black" />
+          <h1 className="font-bold text-p4 sm:text-Heading lg:text-Heading">
+            Connect With Us
+          </h1>
           <div className="w-full md:w-[415px]">
             <Paragraph
               color="gray-600"

@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const AboutImageSection: React.FC = () => {
   return (
-    <div className="flex gap-8 p-12">
-      <div className="w-2/5 h-auto relative">
+    <div className="flex flex-col md:flex-row gap-6 md:gap-8 px-4 md:px-12 py-8">
+      <div className="w-full md:w-2/5 h-auto relative">
         <Image
           src="/images/aboutus1.jpg"
           alt="Team working together"
@@ -13,7 +13,7 @@ const AboutImageSection: React.FC = () => {
           width={1000}
         />
       </div>
-      <div className="w-4/6 h-auto relative">
+      <div className="w-full md:w-4/6 h-auto relative">
         <Image
           src="/images/aboutus2.jpg"
           alt="Presentation in office"

@@ -168,7 +168,7 @@ const AboutOffers = () => {
   return (
     <div className="p-3">
       <div className="flex flex-col w-full md:w-1/2 lg:w-1/2 mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-black">
+        <h2 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold text-dark-nameclr">
           What We Offer
         </h2>
         <p className="text-black text-lg text-center font-normal p-5">
