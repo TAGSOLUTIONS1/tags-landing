@@ -1,7 +1,7 @@
 'use client';
 
 import Paragraph from '@/components/ui/Paragraph';
-import Heading from '../../ui/Heading';
+// import Heading from '../../ui/Heading';
 import React, { useState } from 'react';
 import FormButton from '@/components/ui/FormButton';
 import emojiFlags from 'emoji-flags';

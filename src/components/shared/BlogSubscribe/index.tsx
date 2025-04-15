@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Heading from '@/components/ui/Heading';
+// import Heading from '@/components/ui/Heading';
 import { useState } from 'react';
 
 const BlogsSubscribe = () => {
