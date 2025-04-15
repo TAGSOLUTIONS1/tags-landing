@@ -12,9 +12,9 @@ const IndustriesServe: React.FC = () => {
           </p>
           <p className="text-hh3 sm:text-hh4 font-normal text-lineHeight-p3 mt-4">
             At TAGS, we specialize in providing tailored solutions across
-            diverse industries. Whether you're in manufacturing, healthcare,
-            finance, or beyond, our expertise helps drive your success by
-            addressing the unique challenges of your sector.
+            diverse industries. Whether you&apos;re in manufacturing,
+            healthcare, finance, or beyond, our expertise helps drive your
+            success by addressing the unique challenges of your sector.
           </p>
         </div>
 
