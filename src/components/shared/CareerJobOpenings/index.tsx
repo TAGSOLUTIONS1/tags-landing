@@ -66,12 +66,10 @@ const CareerJobOpenings: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col items-center mt-5">
-        <p className={'text-[#10101899] text-sm m-5'}>
+      <div className="flex flex-col items-center mt-5 bg-orange-primary rounded-[15px]">
+        <p className={'text-white text-sm m-5'}>
           apply at{' '}
-          <span className="hover:text-black hover:underline">
-            hr@tagsolutionsltd.com
-          </span>
+          <span className="hover:underline">hr@tagsolutionsltd.com</span>
         </p>
         {/* <button className="bg-orange-primary text-white px-4 py-2 rounded-full">
           Load more jobs
