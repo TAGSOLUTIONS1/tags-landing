@@ -10,19 +10,19 @@ const slides = [
     text: 'Transform Your Business with Generative AI',
     description:
       'Unlock new levels of innovation and efficiency with our cutting-edge generative AI solutions.',
-    image: '/images/sliderpic.jpg',
+    image: '/images/sliderpic.webp',
   },
   {
     text: 'Tailored Solutions for Your Unique Business Needs',
     description:
       'Our custom service solutions are designed to meet the specific challenges and goals of your business',
-    image: '/images/slider2.jpg',
+    image: '/images/slider2.webp',
   },
   {
     text: 'Trusted by Industry Leaders Like Meta',
     description:
       'Join forces with top companies like Meta who trust our expertise to drive their business forward',
-    image: '/images/slider3.jpg',
+    image: '/images/slider3.webp',
   },
 ];
 
