@@ -37,7 +37,7 @@ export const AboutPartners = () => {
               'We support Have A Seat with tailored tech solutions that streamline their operations and enhance the efficiency of their overall company.'
             }
             button="Learn More"
-            href="https://www.haveaseat.com"
+            href="https://www.haveaseaton.us"
           />
         </div>
       </div>

@@ -11,10 +11,10 @@ export const AboutTagsValues = () => {
     <>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 md:px-12 lg:px-16 py-10 md:py-14 lg:py-16">
         <div className="space-y-5 lg:pr-5">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-dark-nameclr">
+          <h2 className="text-2xl text-center sm:text-start md:text-4xl lg:text-5xl font-bold text-dark-nameclr">
             TAGS&apos; values
           </h2>
-          <p className="mt-4 text-dark-ceoclr text-sm md:text-base lg:text-lg">
+          <p className="text-center sm:text-start mt-4 text-dark-ceoclr text-sm md:text-base lg:text-lg">
             We foster personal and professional development, enabling our
             clients to prosper with us. Core values illuminate our journey to
             excellence.
